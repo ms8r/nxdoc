@@ -1,0 +1,235 @@
+head	1.15;
+access;
+symbols;
+locks
+	markus:1.15; strict;
+comment	@# @;
+
+
+1.15
+date	2013.03.11.00.04.00;	author markus;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2013.02.24.20.07.07;	author markus;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2013.02.23.08.23.30;	author markus;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2013.01.27.08.57.25;	author markus;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2013.01.25.10.24.10;	author markus;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2013.01.24.20.28.18;	author markus;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2013.01.21.19.42.39;	author markus;	state Exp;
+branches;
+next	;
+
+
+desc
+@"Helpful Threads in Support DB" section
+@
+
+
+1.15
+log
+@version for MAR 2013 release (incl. sw installation under unix)
+@
+text
+@<!-- $Id: 08_nx_support_db.html,v 1.13 2013/02/24 20:07:07 markus Exp markus $ -->
+
+ <?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+ <head>
+
+ <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+ <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+ <title>A Short Introduction to Navigatrix</title>
+
+ </head>
+
+ <body>
+
+ <div class="pagebanner">
+ <div id="prevNextContainer">
+ <li id="toc"><a href="index.html#toc">Table of Contents</a></li>
+ <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li>
+ </div>
+ </div>
+
+ <h1 id="AbiTOC25__"><a name="sec_nx_support" id="sec_nx_support"></a>Helpful Threads in the Navigatrix Support Discussion</h1>
+
+ <p>Coming soon, currently under construction ...</p>
+
+ <div id="prevNextContainer">
+ <li id="prev"><a href="07_hidden_treasures.html">Previous<a/></li>
+ </div>
+
+ <!-- Start of StatCounter Code for Default Guide -->
+
+ <script type="text/javascript">
+ var sc_project=8655258; var sc_invisible=1; var sc_security="3edc2993"; var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www."); document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>"); 
+</script>
+
+ <noscript>
+<div class="statcounter">
+<a title="site stats" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8655258/0/3edc2993/1/" alt="site stats"></a></div>
+</noscript>
+
+ <!-- End of StatCounter Code for Default Guide -->
+
+ </body>
+
+ </html> @
+
+
+1.13
+log
+@cleaned up version (cuht) with site_logo.gif page banner
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 08_nx_support_db.html,v 1.12 2013/02/23 08:23:30 markus Exp markus $ -->
+@
+
+
+1.12
+log
+@added nx logo in banner
+@
+text
+@d1 8
+a8 4
+<!-- $Id: 08_nx_support_db.html,v 1.11 2013/01/27 08:57:25 markus Exp markus $ -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+d10 7
+a16 5
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+  <title>A Short Introduction to Navigatrix</title>
+</head>
+ 
+d19 6
+a24 6
+<div class="pagebanner">
+    <div id="prevNextContainer">
+       <li id="toc"><a href="index.html#toc">Table of Contents</a></li> 
+       <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li> 
+    </div>
+</div>
+d28 7
+a34 1
+    <p>Coming soon, currently under construction ...</p>
+d36 2
+a37 14
+<div id="prevNextContainer">
+   <li id="prev"><a href="07_hidden_treasures.html">Previous<a/></li>
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8655258; 
+var sc_invisible=1; 
+var sc_security="3edc2993"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+d39 7
+a45 6
+<noscript><div class="statcounter"><a title="site stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8655258/0/3edc2993/1/"
+alt="site stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+d48 2
+a49 1
+</html>
+@
+
+
+1.11
+log
+@copy from nx homepage with Moe's additions (statcounter, spelling)
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 08_nx_support_db.html,v 1.10 2013/01/25 10:24:10 markus Exp markus $ -->
+d9 1
+d11 7
+a17 3
+<div id="prevNextContainer">
+   <li id="toc"><a href="index.html#toc">Table of Contents</a></li> 
+   <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li> 
+a19 3
+</head>
+ <body>
+
+@
+
+
+1.10
+log
+@added nav bars
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 08_nx_support_db.html,v 1.9 2013/01/24 20:28:18 markus Exp markus $ -->
+d26 17
+@
+
+
+1.9
+log
+@draft sent to Moe
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 08_nx_support_db.html,v 1.1 2013/01/21 19:42:39 markus Exp markus $ -->
+d9 7
+a15 1
+ </head>
+d22 5
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+<!-- $Id$ -->
+d14 1
+a14 1
+   <p>### provide links to some threads (e.g. GPS interfacing trouble shooting) ###</p>
+@

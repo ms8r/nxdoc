@@ -1,0 +1,288 @@
+<!-- $Id: DE_installing_nx.html,v 1.2 2013/10/21 10:21:26 markus Exp markus $ -->
+
+ <?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+ <head>
+
+ <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+ <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+ <title>Navigatrix auf Deutsche Installieren und Einrichten</title>
+
+ </head>
+
+ <body>
+
+ <div class="pagebanner">
+ <div id="prevNextContainer">
+ <li id="toc"><a href="index.html">Navigatrix Hilfe (in Englisch)</a></li>
+ <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li>
+ </div>
+ </div>
+
+ <h1>Navigatrix auf Deutsch Installieren und Einrichten</h1>
+
+ <p> Dieses Dokument beschreibt die Installation von Navigatrix 0.5 auf der Festplatte eines Rechners. Zusätzlich werden die Schritte erläutert, die im Anschluss an die Installation erforderlich sind, um Navigatrix in deutscher Sprache zu konfigurieren. Navigatrix lässt sich auch vollständig von einem USB-Stick oder einer SD-Karte starten und benutzen. In diesem Fall wird die Festplatte geparkt. Dies kann insbesondere auf See sinnvoll sein, um Beschädigungen an der Festplatte zu vermeiden oder als Backup-System im Falle eines Festplattenfehlers. Eine Installation auf Festplatte ist für den täglichen Gebrauch dennoch zu empfehlen, da das System von einer Festplatte im Vergleich zu einem USB-Laufwerk deutlich schneller startet und läuft.</p> 
+
+ <p> Wer das englischsprachige Navigatrix 0.5 bereits auf der Festplatte installiert hat, kann direkt zu <a href="DE_installing_nx.html#sec_anpassen_nx_de">Navigatrix auf Deutsch Einrichten</a> gehen.
+ </p>
+
+ <h2 id="sec_installing_nx_de">Navigatrix auf Festplatte Installieren</h2>
+
+ <p> Mit einem boot-fähigen Navigatrix USB-Stick/SD Karte oder DVD ist die Installation auf der Festplatte in den allermeisten Fällen unkompliziert. Navigatrix lässt sich neben einem bestehenden Betriebssystem installieren (in vielen Fällen Windows als das System, mit dem der Rechner ausgeliefert wurde), so dass man anschliessend zu Beginn des Bootprozesses jeweils auswählen kann, unter welchem System man den Rechner starten möchte.</p>
+ 
+ <p> Für die Installation muss der Rechner zunächst vom Navigatrix USB-Stick/SD Karte gestartet werden. Um den Rechner von einem USB-Laufwerk statt von Festplatte zu starten, muss man ggf. unmittelbar nach Einschalten des Rechners eine Funktionstaste drücken, um die Bootreihenfolge zu ändern (USB-Laufwerk vor Festplatte). Bei den meisten Rechnern wird hierzu zu Beginn des Bootvorgangs für einige Sekunden &ldquo;Press &lt;F2&gt; to enter setup&rdquo; oder ähnlich in der Statusleiste am unteren Rand des Bildschirms angezeigt, <span class="emphasis">bevor</span> das Betriebssytem hochfährt.</p>
+
+ <p> Sobald Navigatrix hochgefahren ist, sollte oben links auf dem Desktop ein Anwendungssymbol mit dem Titel &ldquo;Harddisk install option&rdquo; zu sehen. Der Installations vorgang wird durch Doppelklick auf dieses Symbol gestartet.</p>
+
+ <p class="centered"> <img src="images/hdd_install_on_desktop.gif" width="139" height="306" alt="Harddisk install option on desktop" /> </p>
+
+ <p> Das Installationsprogramm führt dann durch die Schritte der Festplatteninstallation. </p>
+
+ <ol>
+     <li>Zunächst lässt sich die Sprache auswählen, die für den Installationsvorgang verwendet wird (Anmerkung: dies ist nicht die Sprache, in der das System nach abgeschlossener Installation läuft, sondern lediglich die Sprache, die für die Installationsdialoge verwendet wird)
+     </li>
+ </ol>
+
+ <ul class="no_bullet"> <li> <img src="images/install_01_willkommen.gif" width="500" height="441" alt="Sprache für Installation einstellen" /> </li>
+ </ul>
+
+ <ol start="2"> <li> Als nächstes erscheint ein Formular, das prüft, ob die Voraussetzungen für die Installation erfüllt sind.</li>
+ </ol>
+
+ <ul class="no_bullet"> <li> <img src="images/install_02_vorbereitung.gif" width="500" height="414" alt="Installationsvoraussetzungen" /> </li>
+ </ul>
+
+ <ul class="no_bullet">
+     <li> Wichtig: Entgegen der Empfehlung auf dem Formular sollte der Rechner während der Installation <em>nicht</em> mit dem Internet verbunden sein. Zusätzlich sollten die Optionen zum Herunterladen von Aktualisierungen und Software von Drittanbietern <em>nicht</em> ausgewählt werden. Diese Aktualisierungen sind für den Betrieb von Navighatrix nicht erforderlich. Nebem dem unnötigen Verbrauch von ggf. knapper Netzwerkbandbreite können unkontrollierte Aktualisierungen im ungünstigsten Fall dazu führen, das Komponenten des Systems nicht mehr reibungslos miteinander funktionieren. Die in Navigatrix enthaltenen Softwarekomponenten und deren Versionsstände sind sorgfältig aufeinander abgestimmt, um einen stabilen Betrieb untereinanden und mit externen Komponenten wie GPS, AIS, Pactor usw. zu gewährleisten. Bei Softwareversionen bedeutet &ldquo;neuer&rdquo; häufig nicht &ldquo;besser&rdquo;, was Fehleranfälligkeit und Stabilität angeht. Falls erforderlich oder gewünscht, können einzelne Komponenten <em>nach</em> abgeschlossener Installation gezielt und kontrolliert aktualisert werden.</li> 
+     <li>Falls sich ein Wireless Netzwerk in der Nähe befindet, wird als nächstes gefragt, ob der Rechner sich für die Installation mit diesem verbinden soll. Auch hier gilt wieder: Keine Verbindung während der Installation aus den oben genannten Gründen.</li>
+  <li> <img src="images/install_03_funknetzwerk.gif" width="500" height="411" alt="Funknetzwerk" /> </li>
+ </ul>
+
+ <ol start="3">
+     <li>Jetzt geht's ans Eingemachte und es wird festgelegt, wie Navigatrix installiert werden soll. </li>
+ </ol>
+     
+ <ul class="no_bullet"> <li> <img src="images/install_04a_installationsart.gif" width="500" height="415" alt="Installationsart" /> </li>
+
+     <li> Im einfachsten Fall wird die gesamte Festplatte gelöscht und Navigatrix wird als einziges Betriebssystem auf dem Rechner installiert (Option 2). In den meisten Fällen wird jedoch gewünscht, Navigatrix <em>neben</em> einem bestehenden Betriebssytem (z.B. Windows, oder einer andere Linux-Version) zu installieren, so dass man anschliessend jeweils beim Start des Rechners auswählen kann, unter welchem Betriebssystem der Rechner hochfahren soll. Dies ist unter den Optionen (1) und (3) möglich. Unter Option (1) wird automatisch eine neue Partition auf der Festplatte für Navigatrix angelegt, während man unter Option (3) auswählen kann, in welche bereits bestehende Partition Navigatrix installiert werden soll. Zusätzlich lassen sich unter Option (3) einzelne Zweige des Dateisystems in unerschiedlichen Festplattenpartitionen installieren. Dies kann sinnvoll sein, um z.B. den <span class="path"> home</span> Verzeichnisbaum getrennt vom eigentlichen Betriebssytem abzulegen, so dass beim Wechsel auf ein neueres Navigatrix Release in der Zukunft die Dateien des Anwenders erhalten bleiben.</li>
+
+     <li> Im Folgenden wird zunächst die einfachere Option (1) beschrieben. Diese ist ausreichend, wenn auf dem Rechner bisher lediglich <em>ein</em> anderes Betriebssystem vorhanden ist. Anwender, die bereits mehrere Betriebssysteme auf ihrem Rechner haben und/oder mit der Einrichtung und Verwaltung von Festplattenpartitionen vertraut sind, sollten Option (3) auswählen, die weiter unten beschrieben wird.</li>
+
+     <li>Zunächst also das weitere Vorgehen für Option (1), &ldquo;Navigatrix daneben installieren&rdquo;. Hier muss im nächsten Formular lediglich ausgewählt werden, wieviel Platz auf der Festplatte für Navigatrix reserviert werden soll:</li>
+
+     <li> <img src="images/install_04a1_nx_daneben.gif" width="500" height="439" alt="Navigatrix neben einem bestehenden OS isntallieren" /> </li>
+
+     <li> Wie in der Abbildung gezeigt, kann in diesem Formular der Balken, der die bestehende Partition von der für Navigatrix neu einzurichtenden Partition trennt, mit der Maus verschoben werden, um das Größenverhältnis der beiden Partitionen anzupassen. Sofern Musik-, Bild- und Videodateien auf der bereits bestehenden Partition verbleiben sollen, dürften 40-50GB für Navigatrix großzügig genug angelegt sein, um Seekarten, Email, elektronische Bibliothek, eine komprimierte Offline-Version von Wikipedia und andere Anwenderdateien zu speichern. Im Zweifelsfall sollte man dies noch mal überschlagsmäßig unter Kenntnis des eigenen Bedarfs abschätzen. Das eigentliche Betriebssystem schlägt bei Navigatrix mit knapp 6GB zu Buche, so dass der Rest für Anwenderdateien (inkl. Seekarten, Email usw.) zur Verfügung steht. Auf Dateien in einer bereits bestehenden Windows Partition kann man von Navigatrix aus zugreifen. Umgekehrt ist dies allerdings nicht der Fall (d.h. von Windows aus hat man i.d.R. keinen Zugriff auf Dateien, die in der Navigatrix Partition abgelegt werden).
+     </li>
+
+     <li> Für Option (1), &ldquo;Navigatrix daneben installieren&rdquo;, ist dies bereits alles und es geht weiter unten mit Schritt 4 weiter. Hat man Option (3), &ldquo;Etwas anderes&rdquo;, ausgewählt, sind einige zusätzliche Schritte erforderlich.</li>
+
+     <li> <img id="img_installationsart_anderes" src="images/install_04b_installationsart.gif" width="500" height="441" alt="Navigatrix in einer oder mehreren speziellen Partition(en) installieren" /> </li>
+
+     <li> Für diese Optione sollte man am besten vor Beginn des Installationsvorgangs die Festplattenpartitionen so einrichten, wie man sie für die Installation benötigt. In Navigatrix selbst steht dazu GParted als Werkzeug zur Verfügung (im Anwendungsmenu am unteren linken Bildschirmrand unter <span class="menu_item">Preferences -&gt; Partition Editor</span>). Wir gehen hier davon aus, dass der Anwender, der Option (3), <span class="menu_item">Etwas anderes</span>, auswählt, mit diesen Werkzeugen vertraut ist und erklären sie daher hier nicht weiter (die GParted Anwendung enthält außerdem eine ausführliche - allerdings englischsprachige - Hilfe). </li>
+
+     <li> Es lassen sich so z.B. drei Partitionen für die Navigatrix-Installation anlegen:</li>
+     <ol>
+         <li class="lcro">Eine etwa 10GB große Partition für das eigentliche Betriebssystem samt Anwendungen (einschließlich etwas Reserve, falls man z.B. später zusätzliche Anwendungen installieren möchte). Als Dateisystem hierfür &ldquo;ext4&rdquo; auswählen.</li>
+         <li class="lcro">Eine Swap-Partition zur Auslagerung von Hauptspeicheroperationen, falls selbiger ausgeht. Dies ist nur erforderlich, sofern es nicht bereits eine bestehende linux-swap Partition auf der Festplatte gibt (in GParted als solche erkennbar). 4GB sollten hierfür großzügig bemessen sein.</li>
+         <li class="lcro">Der Rest an verfügbarer Plattenkapazität wird dem Anwender <span class="path">home</span> Verzeichnis zugeschlagen und steht für Anwender- und Konfigurationsdateien zur Verfügung. Als Dateisystem hierfür ebenfalls &ldquo;ext4&rdquo; auswählen.</li>
+     </ol>
+     
+     <li>Diese Aufteilung erlaubt, bei einem evtl. späteren Releasewechsel von Navigatrix lediglich das eigentliche System neu in die oben erstgenannte Partition zu installieren, dabei aber alle Anwender- und Konfigurationsdateien unter <span class="path">home</span> beizubehalten.</li>
+
+     <li> Hat man die erforderlichen Partitionen eingerichtet und dann im oben gezeigten Formular &ldquo;<a href="DE_installing_nx.html#img_installationsart_anderes">Installationsart</a>&rdquo; die dritte Option <span class="menu_item">Etwas anderes</span> ausgewählt, gelangt man zu folgendem Formular:</li>
+
+     <li> <img src="images/install_04b1_installationsart.gif" width="500" height="439" alt="Navigatrix in einer oder mehreren speziellen Partition(en) installieren" /> </li>
+
+     <li> Hier lässt sich nun festlegen, in welche Partitionen die einzelnen Systembestandteile installiert werden sollen. Dazu unter &ldquo;Laufwerk&rdquo; jeweils die enstprechende Partition auswählen und auf die Schaltfläche <span class="menu_item">Change</span> klicken. Dies öffnet ein weiteres Dialogfenster, in dem die Einstellungen für die jeweilige Partition vorgenommen werden können:</li>  
+
+     <li> <img src="images/install_04b2_installationsart.gif" width="500" height="439" alt="Navigatrix in einer oder mehreren speziellen Partition(en) installieren" /> </li>
+
+     <li>Sofern die Partionen bereits zuvor mit der richtigen Größe angelegt wurden, kann die hier in MB angezeigte Größe unverändert bleiben. Man braucht also lediglich Unter <span class="menu_item">Benutzen als:</span> die Liste aufklicken und in der sich öffnenden Auswahl das richtige Dateisystem markieren.</li>
+    
+     <li> <img src="images/install_04b3_installationsart.gif" width="500" height="487" alt="Navigatrix in einer oder mehreren speziellen Partition(en) installieren" /> </li>
+
+     <li> Zusätzlich muss in dem sich neu öffnenden Feld <span class="menu_item">Mount point</span> festgelegt werden, was in dieser Partition installiert werden soll. Für das eigentliche Betriebssystem samt Anwendungen ist das Root-Verzeichnis (&ldquo;/&rdquo;) auszuwählen, für das <span class="path">home</span> Verzeichnis &ldquo;/home&rdquo;. Bei Bedarf kann man die Partition zusätzlich neu formatieren lassen. </li>
+
+     <li>Nachdem man diese Einstellungen vorgenommen hat, erscheint eine Warnung, dass diese Änderungen zunächst zur Festplatte zurückgeschrieben werden müssen.</li>
+
+     <li> <img src="images/install_04b8_installationsart.gif" width="400" height="116" alt="Navigatrix in einer oder mehreren speziellen Partition(en) installieren" /> </li>
+
+     <li> Klickt man auf <span class="menu_item">Weiter</span> erscheint nochmals die Partitionsübersicht, auf der man jetzt <span class="menu_item">Jetzt installieren</span> anklicken kann.</li>
+
+     <li> <img src="images/install_04b9_installationsart.gif" width="500" height="441" alt="Navigatrix in einer oder mehreren speziellen Partition(en) installieren" /> </li>
+ </ul>
+ 
+ <ol start="4">
+     <li>Als nächstes wählt man seinen Standort aus, der für regionale Einstellungen wie Datum, Uhrzeit, Zahlen- und Währungsformate benutzt wird.</li>
+ </ol>
+
+ <ul class="no_bullet">
+     <li> <img src="images/install_05_wo_befinden.gif" width="500" height="441" alt="Standortauswhl" /> </li>
+ </ul>
+
+ <ol start="5">
+     <li> Weiter geht's mit der Auswahl der Tastaturbelegung.</li>
+ </ol>
+    
+ <ul class="no_bullet">
+     <li> <img src="images/install_06_tastaturbelegung.gif" width="500" height="440" alt="Tastaturbelegung" /> </li>
+     
+     <li>Wichtig: Bei diesem Schritt aufpassen und am besten die ausgewählte Belegung in dem entsprechenden Eingabefeld durch die Eingabe einiger Sonderzeichen überprüfen. Im nächsten Schritt wird nämlich ein maskiertes Passwort eigegeben. Wenn dieses Sonderzeichen enthält und diese mit falscher Tastaturbelegung eingegeben werden, hat man i.d.R. kaum eine Chance, dieses Passwort später zu rekonstruieren.</li>
+
+ </ul>
+
+ <ol start="6" id="enum_item_install_user_info">
+     <li> Schliesslich sind noch einige Angaben zu Benutzername und Passwort erforderlich.</li>
+ </ol>
+
+ <ul class="no_bullet">
+     <li> <img src="images/install_07_wer_bist_du_denn.gif" width="500" height="437" alt="Wer bist du denn?" /> </li>
+     
+     <li>Auch, wenn man hier &ldquo;Automatische Anmeldung&rdquo; auswählt, sollte man sich das gewählte Passwort unbedingt merken, da sich später im System administrative Funktionen nur mit diesem Passwort ausführen lassen. </li>
+
+ </ul>
+
+ <ol start=7">
+     <li> Das war's! Nachdem man im letzten Formular auf <span class="menu_item">Weiter</span> gekilckt hat, läuft die Installationsmaschinerie an und kleine Dialogfenster informieren über den Fortgang.</li>
+ </ol>
+
+ <ul class="no_bullet">
+     <li> <img src="images/install_08_dateien_kopieren.gif" width="400" height="204" alt="Dateien kopieren" /> </li>
+
+     <li> Nachdem dies alles seinen geordneten Gang genommen hat, erscheint ein Dialogfenster, dass "Ich habe fertig!" verkündet</li>
+
+     <li> <img src="images/install_09_habe_fertig.gif" width="400" height="98" alt="Ich habe fertig" /> </li>
+
+     <li> Hier empfiehlt es sich <span class="menu_item">Ausprobieren fortsetzen"</span> auszuwählen, da es sonst bei einem unmittelbaren Neustart unter Umständen schwierig ist, den USB-Stick oder die SD-Karte genau im richtigen Moment zu entfernen, bevor der Rechner erneut von dieser statt von der Festplate startet.</li>
+
+ </ul>
+
+
+  <h2 id="sec_anpassen_nx_de">Navigatrix auf Deutsch Einrichten</h2>
+
+  <p><em>*** Note: Ab Navigatrix Version 0.5 vom September 2013 ist das deutsche Sprachpaket bereits in der Installation enthalten. Ab dieser Version muss ggf. lediglich die <a href="DE_installing_nx.html#deutsch_nach_oben"> Spracheinstellung geändert werden</a>, es müssen aber keine zusätzlichen Pakete heruntergeladen und installiert werden. Die nachfolgende Anleitung gilt also für Navigatrix 0.4 sowie die 0.5 Versionen vom Juli und August 2013.
+  </em></p>
+
+ <p>Um mit Navigatrix weitestgehend in Deutsch zu arbeiten, muss nach erfolgter Festplatteninstallation die deutsche Sprachunterstützung installiert und aktiviert werden (Wörterbuch, Thesaurus, Hilfedateien, Anpassung von Datums-, Zahlen- und Währungsformaten). Damit wird die eigentliche Arbeitsumgebung auf Deutsch umgestellt. Es hängt dann jeweils noch von der einzelnen jeweils benutzten Anwendung ab, ob diese ebenfalls Deutsch unterstützt und die Anwendungsmenüs, -hilfe usw. in Deutsch erscheinen. Dies ist z.B. für die Gnumeric Tabellenkalkulation, den Firefox Web-Browser und das Sylpheed Email-Programm der Fall. Die Airmail-Anwendung ist jedoch z.B. - wie auch unter Windows - weiterhin nur in Englisch verfügbar, ebenso wie einige kleinere Anwendungen zur Unterstützung von Navigation und Kommunikation.
+ </p>
+
+ <p> Wer häufig auf Befehlszeilenebene in der Konsole arbeitet und die deutschen "man pages" des Unix Systems vorzieht, kann diese zusätzlich zu den beiden oben angeführten Schritten installieren (in dieser Anleitung nicht weiter erläutert).
+ </p>
+ <p> Nun aber zu den Details.
+ </p>
+
+ <h3>Installieren und Aktivieren der deutschen Sprachunterstützung</h3>
+
+ <p> Hierzu ist eine Internetverbindung mit ausreichendem &ldquo;Durchmesser&rdquo; erforderlich, da bei diesem Schritt ca. 75MB zusätzliche Daten heruntergeladen werden. Die einzelnen Schritte für das Installieren und Aktivieren der deutschen Sprachunterstützung werden im Folgenden kurz beschrieben.</p>
+
+ <ol>
+     <li> Im <span class="menu_item">Manta-Menü</span> <span class="menu_item">Preferences -&gt; Language Support</span> auswählen.</li>
+ </ol>
+ 
+ <ul class="no_bullet"> <li> <img src="images/01_language_support_in_manta_menu.gif" width="320" height="416" alt="Language Support im Manta Menü" /> </li>
+ </ul>
+
+ <ol start="2">
+     <li> Das System prüft dann zunächst, ob für die bereits installierten Sprachen (Englisch, Spanisch und Französisch) alle Komponenten vorhanden sind.</li>
+ </ol>
+
+ <ul class="no_bullet"> 
+     <li> <img src="images/02_checking_available_support.gif" width="400" height="354" alt="Checking available language support" /> </li>
+
+     <li> Als Ergebnis der Überprüfung wird angezeigt, dass die Sprachunterstützung für die bereits installierten Sprachen nicht vollständig ist.</li>
+
+     <li> <img src="images/03_not_installed_completly.gif" width="400" height="129" alt="Support not complete" /> </li>
+
+     <li> Hier kann man getrost &ldquo;Remind me later"&rdquo; anklicken, da ansonsten noch größere Datenmengen für die bereits installierten Sprachen heruntergeladen werden. Insbesondere die umfangreichen Hilfe-Dateien für das Bildbearbeitungsprogramm GIMP in Spanisch und Französisch sind im Navigatrix Lieferumfang nicht enthalten, und man kann sich das Herunterladen dieser Dateien hier sparen.</li>
+
+ </ul>
+
+ <ol start="3">
+     <li> In den dann sichtbaren Formular werden die bereits installierten Sprachen angezeigt.</li>
+ </ol>
+ <ul class="no_bullet"> 
+     <li> <img src="images/04_language_support.gif" width="400" height="394" alt="Language Support" /> </li>
+
+     <li> Ein Klick auf <span class="menu_item">Install/Remove Languages...</span> bringt eine Auswahlliste zur Anzeige, in der man durch Anklicken der Box rechts eine oder mehrere neue Sprachen zur Installation makieren kann.</li> 
+
+     <li> <img src="images/06_installed_languages_with_selection.gif" width="420" height="351" alt="Language Support - Installed Languages" /> </li>
+
+     <li> Nachdem man hier Deutsch ausgewählt hat, klickt man <span class="menu_item">Apply Changes</span>, woraufhin man zunächst zur Eingabe seines Administrationspassworts aufgefordert wird.</li>
+
+     <li> <img src="images/07_authenticate.gif" width="500" height="183" alt="Authentication" /> </li>
+
+     <li> Hier ist das Passwort einzugeben, das man <a href="DE_installing_nx.html#enum_item_install_user_info">bei der Installation festgelegt hat</a> (sofern man dieses nicht im Nachhinein geändert hat).</li>
+
+     <li> Wenn man nach erfolgter Passworteingabe auf die <span class="menu_item">Authenticate</span> Schaltfläche klickt, startet das Herunterladen der deutschen Sprachpakete und deren anschliessende Installation. Ein Formular informiert über den Fortschritt des Ganzen.</li>
+
+     <li> <img src="images/08_applying_changes.gif" width="400" height="301" alt="Applying changes" /> </li>
+
+     <li> Sobald die Installation abgeschlossen ist, erscheinen im Formular &ldquo;Language Support&rdquo; nun auch die Einträge für Deutsch. Damit steht nun z.B. die Deutsche Rechtschreibprüfung im Textverarbeitungsprogramm zur Verfügung. </li>
+
+     <li> <img src="images/09_language_support_with_german.gif" width="400" height="379" alt="Language Support mit Deutsch" /> </li>
+
+ </ul>
+
+ <ol start="4">
+
+     <li id="deutsch_nach_oben"> Um die Arbeitsoberfläche und Anwendungsmenüs standardmäßig auf Deutsch umzustellen, muss der entsprechende "Deutsch" Eintrag in der Liste noch mit der Maus an die oberste Stelle, über &ldquo;Englisch&rdquo; gezogen werden.</li>
+ </ol>
+ <ul class="no_bullet"> 
+    <li> 
+       <img src="images/10_moving_german.gif" width="400" height="379" alt="Deutsch nach oben verschieben" /> 
+       <img src="images/11_german_on_top.gif" width="400" height="379" alt="Deutsch ganz oben" /> 
+    </li>
+    <li> Anschließend klickt man noch auf die Schaltfläche <span class="menu_item">Apply System-Wide</span> (erfordert erneute Passworteingabe).
+ </ul>
+
+ <ol start="6">
+     <li> Schließlich muss man sich noch einmal aus- und wieder einloggen, damit die vorgenommenen Änderungen wirksam werden (ansonsten ist dies beim nächsten Neustart des Rechners der Fall). Bei der Neuanmeldung wird man gefragt, ob man die Standardordner in seinem <span class="path">home</span> Verzeichnis in die jeweiligen deutschen Bezeichnungen umbenennen möchte. </li>
+ </ol>
+ <ul class="no_bullet"> 
+    <li> <img src="images/12_ordner_automatisch_umbenennen.gif" width="500" height="329" alt="Ordner umbenennen" /> 
+    </li>
+    <li> Wählt man hier <span class="menu_item">Namen aktualisieren</span> aus, muss man berücksichtigen, dass die Lesezeichen, die links im Dateimanager angezeigt werden, dann auf die alten bzw. nicht mehr existente Ordnernamen verweisen und manuell gelöscht und neu angelegt werden müssen. Zusätzlich müssen ggf. bestehende Dateien aus den alten in die neuen Ordner verschoben werden.</li>
+
+    <li> <img src="images/13_deutsche_ordner.gif" width="600" height="433" alt="Ordner umbenennen" /> 
+    </li>
+
+ </ul>
+
+ <p> Das war's. Im <span class="menu_item">Manta Menü</span> erscheinen nun deutsche Anwendungskategorien.</p>
+
+ <p class="centered"> <img src="images/14_manta_zubehoer_mixed.gif" width="400" height="243" alt="Deutsches Manta Menu" /> </p>
+
+ <p> Sofern die jeweiligen Anwendungen dies Unterstützen, erscheinen Menüs und Benutzerführung innerhalb der Anwendungen ebenfalls in Deutsch, wie hier am Beispiel der Tabellenkalkulation Gnumeric gezeigt.</p>
+
+ <p class="centered"> <img src="images/16_gnumeric_de.gif" width="800" height="473" alt="Gnumeric in Deutsch" /> </p>
+
+
+
+<!--
+ <hr /> <div id="prevNextContainer">
+ <li id="prev"><a href="02_getting_nx.html">Previous<a/></li>
+ <li id="next"><a href="04_applications.html">Next<a/></li>
+ </div>
+ -->
+
+ <!-- Start of StatCounter Code for Default Guide -->
+
+ <script type="text/javascript">
+ var sc_project=8655217; var sc_invisible=1; var sc_security="04865527"; var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www."); document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>"); 
+</script>
+
+ <noscript>
+<div class="statcounter">
+<a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8655217/0/04865527/1/" alt="web analytics"></a></div>
+</noscript>
+
+ <!-- End of StatCounter Code for Default Guide -->
+
+ </body>
+
+ </html> 

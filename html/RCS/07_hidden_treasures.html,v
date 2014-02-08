@@ -1,0 +1,254 @@
+head	1.15;
+access;
+symbols;
+locks
+	markus:1.15; strict;
+comment	@# @;
+
+
+1.15
+date	2013.03.11.00.04.00;	author markus;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2013.02.24.20.07.07;	author markus;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2013.02.23.08.23.30;	author markus;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2013.01.27.08.57.25;	author markus;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2013.01.25.10.24.10;	author markus;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2013.01.24.20.28.18;	author markus;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2013.01.21.19.42.39;	author markus;	state Exp;
+branches;
+next	;
+
+
+desc
+@"Hidden Treasures" section
+@
+
+
+1.15
+log
+@version for MAR 2013 release (incl. sw installation under unix)
+@
+text
+@<!-- $Id: 07_hidden_treasures.html,v 1.13 2013/02/24 20:07:07 markus Exp markus $ -->
+
+ <?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+ <head>
+
+ <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+ <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+ <title>A Short Introduction to Navigatrix</title>
+
+ </head>
+
+ <body>
+
+ <div class="pagebanner">
+ <div id="prevNextContainer">
+ <li id="toc"><a href="index.html#toc">Table of Contents</a></li>
+ <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li>
+ </div>
+ </div>
+
+ <h1 id="AbiTOC24__" dir="ltr" style="text-align:left;margin-bottom:0.0417in;margin-top:0.3056in;margin-right:0.0000in"><a name="sec_hidden_treasures" id="sec_hidden_treasures"></a>Hidden Treasures</h1>
+
+ <p>Coming soon, currently under construction ...</p>
+
+ <!-- Point to some of the useful utilities that come with nx, but are not part of any of the applications: ImageMagic exiv2 Scrapbook add-in to firefox others? -->
+
+ <div id="prevNextContainer">
+ <li id="prev"><a href="06_config_nx.html">Previous<a/></li>
+ <li id="next"><a href="08_nx_support_db.html">Next<a/></li>
+ </div>
+
+ <!-- Start of StatCounter Code for Default Guide -->
+
+ <script type="text/javascript">
+ var sc_project=8655252; var sc_invisible=1; var sc_security="81de4e76"; var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www."); document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>"); 
+</script>
+
+ <noscript>
+<div class="statcounter">
+<a title="web analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8655252/0/81de4e76/1/" alt="web analytics"></a></div>
+</noscript>
+
+ <!-- End of StatCounter Code for Default Guide -->
+
+ </body>
+
+ </html> @
+
+
+1.13
+log
+@cleaned up version (cuht) with site_logo.gif page banner
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 07_hidden_treasures.html,v 1.12 2013/02/23 08:23:30 markus Exp markus $ -->
+@
+
+
+1.12
+log
+@added nx logo in banner
+@
+text
+@d1 8
+a8 4
+<!-- $Id: 07_hidden_treasures.html,v 1.11 2013/01/27 08:57:25 markus Exp markus $ -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+d10 7
+a16 5
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+  <title>A Short Introduction to Navigatrix</title>
+</head>
+ 
+d19 22
+a40 34
+<div class="pagebanner">
+    <div id="prevNextContainer">
+       <li id="toc"><a href="index.html#toc">Table of Contents</a></li> 
+       <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li> 
+    </div>
+</div>
+
+   <h1 id="AbiTOC24__" dir="ltr" style="text-align:left;margin-bottom:0.0417in;margin-top:0.3056in;margin-right:0.0000in"><a name="sec_hidden_treasures" id="sec_hidden_treasures"></a>Hidden Treasures</h1>
+
+    <p>Coming soon, currently under construction ...</p>
+
+<!--
+
+Point to some of the useful utilities that come with nx, but are not part of any of the applications:
+    ImageMagic
+    exiv2
+    Scrapbook add-in to firefox
+    others?
+-->
+<div id="prevNextContainer">
+   <li id="prev"><a href="06_config_nx.html">Previous<a/></li>
+   <li id="next"><a href="08_nx_support_db.html">Next<a/></li>
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8655252; 
+var sc_invisible=1; 
+var sc_security="81de4e76"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+d42 7
+a48 6
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/8655252/0/81de4e76/1/"
+alt="web analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+d51 2
+a52 1
+</html>
+@
+
+
+1.11
+log
+@copy from nx homepage with Moe's additions (statcounter, spelling)
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 07_hidden_treasures.html,v 1.10 2013/01/25 10:24:10 markus Exp markus $ -->
+d9 1
+d11 7
+a17 3
+<div id="prevNextContainer">
+   <li id="toc"><a href="index.html#toc">Table of Contents</a></li> 
+   <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li> 
+a19 3
+</head>
+ <body>
+
+@
+
+
+1.10
+log
+@added nav bars
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 07_hidden_treasures.html,v 1.9 2013/01/24 20:28:18 markus Exp markus $ -->
+d35 17
+@
+
+
+1.9
+log
+@draft sent to Moe
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 07_hidden_treasures.html,v 1.1 2013/01/21 19:42:39 markus Exp markus $ -->
+d9 7
+a15 1
+ </head>
+d30 5
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+<!-- $Id$ -->
+d13 11
+a23 8
+   <p>### Point to some of the useful utilities that come with nx, but are not part of any of the applications:</p>
+   <ul>
+    <li>	ImageMagic</li>
+    <li>	exiv2</li>
+    <li>	Scrapbook add-in to firefox</li>
+    <li>	others?    </li>
+   </ul>
+   <p>###</p>
+@

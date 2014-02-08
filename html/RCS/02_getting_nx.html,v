@@ -1,0 +1,473 @@
+head	1.16;
+access;
+symbols;
+locks
+	markus:1.16; strict;
+comment	@# @;
+
+
+1.16
+date	2013.05.08.02.23.27;	author markus;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2013.03.11.00.04.00;	author markus;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2013.02.24.20.07.07;	author markus;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2013.02.23.08.23.30;	author markus;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2013.01.27.08.57.25;	author markus;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2013.01.25.10.24.10;	author markus;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2013.01.24.20.28.18;	author markus;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2013.01.24.10.16.42;	author markus;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2013.01.22.20.22.34;	author markus;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2013.01.21.19.40.59;	author markus;	state Exp;
+branches;
+next	;
+
+
+desc
+@"Getting nx" section
+@
+
+
+1.16
+log
+@added paragraph about home-size fix on USB
+@
+text
+@<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+ <head>
+
+ <!-- $Id: 02_getting_nx.html,v 1.15 2013/03/11 00:04:00 markus Exp markus $ -->
+
+ <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+ <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+ <title>A Short Introduction to Navigatrix: Getting Navigatrix</title>
+
+ </head>
+
+ <body>
+
+ <div class="pagebanner">
+ <div id="prevNextContainer">
+ <li id="toc"><a href="index.html#toc">Table of Contents</a></li>
+ <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li>
+ </div>
+ </div>
+
+ <h1 id="sec_getting_nx">Getting Navigatrix</h1>
+
+ There are two ways to get a bootable and installable version of Navigatrix. <ol>
+ <li> The easiest way to get Navigatrix is to find someone who already runs it on his or her computer. Ask around in any anchorage or marina and you might be in luck. All you will need is a 4GB or greater USB stick or SD memeory card and a computer that is able to boot from such a device (see <a href="03_installing_nx.html"> “Installing Navigatrix”</a>). Any current user should have a bootable USB stick or SD card. Booting from that device they will have an icon on their desktop labeled “Make a copy for a friend”: </li>
+ </ol>
+
+ <ul class="no_bullet"> <li> <img src="images/nx_cp_for_friend.gif" alt="Make a copy for a friend" height="332" width="600" /></li>
+ <li> Double-clicking on that icon will start a little script that will ask you to insert your USB stick or memory card and then create a bootable version of Navigatrix on that device. If your friend no longer has the icon on her/his desktop, they can also start the script manually by pressing <span class="keyboard_shortcut">[ctrl]+[alt]+[T]</span> which will bring up a terminal window (think "DOS Command Prompt" under Windows). In that terminal window type “<span class="code">nxcopy</span>” (without the quotes) which will start the shell script to copy Navigatrix. </li>
+ </ul>
+
+ <ol start="2"> <li>The alternative way to obtain Navigatrix is perhaps just as easy but requires you to have an internet connection "thick" enough to download a 1.3GB file. Go to <a href="http://navigatrix.net/">Navigatrix.net</a> and click on the “Download” link in the top-center of the Navigatrix home page that opens up. This will bring you to a page that looks like this: </li>
+ </ol>
+
+ <ul class="no_bullet"> <li> <img src="images/nx_download_page.gif" alt="Navigatrix download page" height="548" width="800" /></li>
+ <li> If you are currently running a version of Windows on your computer you will need to follow the instructions in “Step 1” and “Step 2” on the Download page. Step 1 will download an "ISO image" (a "literal copy" of a boot/install CD/DVD) of the current version of Navigatrix. Step 2 will download a little Windows program that creates a bootable USB stick from that ISO image. If you are currently running Linux Ubuntu you can use Ubuntu's “Startup Disk Creator” instead of the Windows program to create the bootable USB stick (or SD memory card). Alternatively, you can burn the ISO file to a DVD, using some program that can transfer an ISO image back to a DVD (a simple copy of the ISO to the DVD will not work). </li>
+ </ul>
+
+ <p>One of the nice things about Navigatrix is that you can run the entire system from the bootable USB stick or SD card, with your hard drive turned off and therefore not subjected to the heaving and banging of a moving boat (or the vibration from an engine for that matter). Many Navigatrix users have it installed on their hard drive (it will boot much faster compared to the USB stick) but also keep a bootable USB stick/SD card which they can use under way. In this case it is a good idea to use a stick/card bigger than the required 4GB minimum in order to keep charts and any documents you may want to access under way on the stick. An 8GB stick or card works well for many folks. 16GB may be a good idea if you plan to put the <a href="04_applications.html#apssOffice_kiwix">Kiwix offline version of Wikipedia</a> (just short of 4GB) on the stick or card.</p>
+
+ <p> Note that you can access the hard drive from the stick if you need to, for example to copy files to and from the USB stick. The hard drive will show up in the Navigatrix File Manager (see “<a href="04_applications.html">The Applications</a>”) and can be “mounted” (i.e. made available for access) by clicking on it. In this case the hard drive will no longer be "parked" though. To "unmount" the drive you will have to “eject” it by pressing the little eject symbol next to it in the File Manager when done. </p>
+
+ <p> Also note that your "home" directory on the USB stick will have a fixed and relatively small size of 500 MB by default. This size makes sense on a 4GB stick. However, even if you use a larger capacity USB stick, your home directory will be limited to 500MB (this limitation does not apply to the Documents, Library, Music, etc. subdirectories under "home" which can take up the available capacity on the stick). Since most application related configuration and log files are stored in the fixed-size portion of your home directory, it is possible to hit the ceiling on the 500MB limit rather quickly. The following post on the Navigatrix Support discussion database describes how you can raise the 500MB limit on your USB stick in this case: <a href="http://www.navigatrix.net/viewtopic.php?p=1695#p1695">http://www.navigatrix.net/viewtopic.php?p=1695#p1695</a>
+
+ <div id="prevNextContainer">
+ <li id="prev"><a href="01_nx_what_why.html">Previous</a><a /></li>
+ <a> </a> <li id="next"><a href="03_installing_nx.html">Next</a><a /></li>
+ </div>
+
+ <a> </a> <!-- Start of StatCounter Code for Default Guide -->
+
+ <script type="text/javascript">
+ var sc_project=8655214; var sc_invisible=1; var sc_security="337243f3"; var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www."); document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>"); 
+</script>
+
+ <noscript>
+<div class="statcounter">
+<a title="free web stats" href="http://statcounter.com/free-web-stats/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8655214/0/337243f3/1/" alt="free web stats"></a></div>
+</noscript>
+
+ <!-- End of StatCounter Code for Default Guide -->
+
+ </body>
+
+ </html> 
+@
+
+
+1.15
+log
+@version for MAR 2013 release (incl. sw installation under unix)
+@
+text
+@d7 1
+a7 1
+ <!-- $Id: 02_getting_nx.html,v 1.13 2013/02/24 20:07:07 markus Exp markus $ -->
+d41 1
+a41 1
+ <p>One of the nice things about Navigatrix is that you can run the entire system from the bootable USB stick or SD card, with your hard drive turned off&nbsp; and therefore not subjected to the heaving and banging of a moving boat (or the vibration from an engine for that matter). Many Navigatrix users have it installed on their hard drive (it will boot much faster compared to the USB stick) but also keep a bootable USB stick/SD card which they can use under way. In this case it is a good idea to use a stick/card bigger than the required 4GB minimum in order to keep charts and any documents you may want to access under way on the stick. An 8GB stick or card works well for many folks. 16GB may be a good idea if you plan to put the <a href="04_applications.html#apssOffice_kiwix">Kiwix offline version of Wikipedia</a> (just short of 4GB) on the stick or card.</p>
+d45 2
+@
+
+
+1.13
+log
+@cleaned up version (cuht) with site_logo.gif page banner
+@
+text
+@d7 1
+a7 1
+ <!-- $Id: 02_getting_nx.html,v 1.12 2013/02/23 08:23:30 markus Exp markus $ -->
+d27 1
+a27 1
+ <li> The easiest way to get Navigatrix is to find someone who already runs it on their computer. Ask around in any anchorage or marina and you might be in luck. All you will need is a 4GB or greater USB stick or SD memeory card and a computer that is able to boot from such a device (see <a href="03_installing_nx.html"> “Installing Navigatrix”</a>). Any current user should have a bootable USB stick or SD card. Booting from that device they will have an icon on their desktop labeled “Make a copy for a friend”: </li>
+d41 1
+a41 1
+ <p>One of the nice things about Navigatrix is that you can run the entire system from the bootable USB stick or SD card, with your hard drive turned off&nbsp; and therefore not subjected to the heaving and banging of a moving boat (or the vibration from an engine for that matter). Many Navigatrix users have it installed on their hard drive (it will boot much faster compared to the USB stick) but also keep a bootable USB stick/SD card which they can use under way. In this case it is a good idea to use a stick/card bigger than the required 4GB minimum in order to keep charts and any documents you may want to access under way on the stick. An 8GB stick or card works well for many folks. </p>
+d65 1
+a65 1
+ </html> @
+
+
+1.12
+log
+@added nx logo in banner
+@
+text
+@d2 52
+a53 111
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- $Id: 02_getting_nx.html,v 1.11 2013/01/27 08:57:25 markus Exp markus $ -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+  <title>A Short Introduction to Navigatrix: Getting Navigatrix</title>
+</head>
+<body>
+
+<div class="pagebanner">
+    <div id="prevNextContainer">
+    <li id="toc"><a href="index.html#toc">Table of Contents</a></li>
+    <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li>
+    </div>
+</div>
+
+<h1 id="sec_getting_nx">Getting Navigatrix</h1>
+There are two ways to get a bootable and installable version of
+Navigatrix.
+<ol>
+  <li> The easiest way to get Navigatrix is to find someone who already
+runs it on their computer. Ask around in any anchorage or marina and
+you might be in luck. All you will need is a 4GB or greater USB stick
+or SD memeory card and a computer that is able to boot from such a
+device (see <a href="03_installing_nx.html"> “Installing Navigatrix”</a>).
+Any current user should have a bootable USB stick or SD card. Booting
+from that device they will have an icon on their desktop labeled “Make
+a copy for a friend”:
+  </li>
+</ol>
+<ul class="no_bullet">
+  <li>
+    <img src="images/nx_cp_for_friend.gif"
+ alt="Make a copy for a friend" height="332" width="600" /></li>
+  <li>
+Double-clicking on that icon will start a little script that will ask
+you to insert your USB stick or memory card and then create a bootable
+version of Navigatrix on that device. If your friend no longer has the
+icon on her/his desktop, they can also start the script manually by
+pressing <span class="keyboard_shortcut">[ctrl]+[alt]+[T]</span> which
+will bring up a terminal window (think "DOS Command Prompt" under
+Windows). In that terminal window type “<span class="code">nxcopy</span>”
+(without the quotes) which will start the shell script to copy
+Navigatrix.
+  </li>
+</ul>
+<ol start="2">
+  <li>The alternative way to obtain Navigatrix is perhaps just as easy
+but requires you to have an internet connection "thick" enough to
+download a 1.3GB file. Go to <a href="http://navigatrix.net/">Navigatrix.net</a>
+and click on the “Download” link in the top-center of the Navigatrix
+home page that opens up. This will bring you to a page that looks like
+this:
+  </li>
+</ol>
+<ul class="no_bullet">
+  <li>
+    <img src="images/nx_download_page.gif"
+ alt="Navigatrix download page" height="548" width="800" /></li>
+  <li>
+If you are currently running a version of Windows on your computer you
+will need to follow the instructions in “Step 1” and “Step 2” on the
+Download page. Step 1 will download an "ISO image" (a "literal copy" of
+a boot/install CD/DVD) of the current version of Navigatrix. Step 2
+will download a little Windows program that creates a bootable USB
+stick from that ISO image. If you are currently running Linux Ubuntu
+you can use Ubuntu's “Startup Disk Creator” instead of the Windows
+program to create the bootable USB stick (or SD memory card).
+Alternatively, you can burn the ISO file to a DVD, using some program
+that can transfer an ISO image back to a DVD (a simple copy of the ISO
+to the DVD will not work).
+  </li>
+</ul>
+<p>One of the nice things about Navigatrix is that you can run the
+entire system from the bootable USB stick or SD card, with your hard
+drive turned off&nbsp; and therefore not subjected to the heaving and
+banging of a moving boat (or the vibration from an engine for that
+matter). Many Navigatrix users have it installed on their hard drive
+(it will boot much faster compared to the USB stick) but also keep a
+bootable USB stick/SD card which they can use under way. In this case
+it is a good idea to use a stick/card bigger than the required 4GB
+minimum in order to keep charts and any documents you may want to
+access under way on the stick. An 8GB stick or card works well for many
+folks.
+</p>
+<p>
+Note that you can access the hard drive from the stick if you need to,
+for example to copy files to and from the USB stick. The hard drive
+will show up in the Navigatrix File Manager (see “<a
+ href="04_applications.html">The Applications</a>”) and can be
+“mounted” (i.e. made available for access) by clicking on it. In this
+case the hard drive will no longer be "parked" though. To "unmount" the
+drive you will have to “eject” it by pressing the little eject symbol
+next to it in the File Manager when done. </p>
+<div id="prevNextContainer">
+<li id="prev"><a href="01_nx_what_why.html">Previous</a><a /></li>
+<a> </a>
+<li id="next"><a href="03_installing_nx.html">Next</a><a /></li>
+</div>
+<a> </a>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8655214; 
+var sc_invisible=1; 
+var sc_security="337243f3"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+a54 6
+<noscript><div class="statcounter"><a title="free web stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/8655214/0/337243f3/1/"
+alt="free web stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+d56 10
+a65 2
+</body>
+</html>
+@
+
+
+1.11
+log
+@copy from nx homepage with Moe's additions (statcounter, spelling)
+@
+text
+@d4 1
+a4 1
+<!-- $Id: 02_getting_nx.html,v 1.10 2013/01/25 10:24:10 markus Exp markus $ -->
+d10 6
+a15 3
+<div id="prevNextContainer">
+<li id="toc"><a href="index.html#toc">Table of Contents</a></li>
+<li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li>
+d17 1
+d34 1
+a34 1
+    <img src="images/nx_cp_for_friend.png"
+d59 1
+a59 1
+    <img src="images/nx_download_page.png"
+@
+
+
+1.10
+log
+@added nav bars
+@
+text
+@a0 2
+<!-- $Id: 02_getting_nx.html,v 1.9 2013/01/24 20:28:18 markus Exp markus $ -->
+<?xml version="1.0" encoding="UTF-8"?>
+d3 2
+a4 1
+ <head>
+d8 2
+a9 1
+
+d11 2
+a12 2
+   <li id="toc"><a href="index.html#toc">Table of Contents</a></li> 
+   <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li> 
+d14 3
+a16 8
+
+ </head>
+ <body>
+
+   <h1 id="sec_getting_nx"></a>Getting Navigatrix</h1>
+
+There are two ways to get a bootable and installable version of Navigatrix.
+
+d18 9
+a26 3
+<li> 
+The easiest way to get Navigatrix is to find someone who already runs it on their computer. Ask around in any anchorage or marina and you might be in luck. All you will need is a 4GB or greater USB stick or SD memeory card and a computer that is able to boot from such a device (see <a href="03_installing_nx.html"> &ldquo;Installing Navigatrix&rdquo;</a>). Any current user should have a bootable USB stick or SD card. Booting from that device they will have an icon on their desktop labeled &ldquo;Make a copy for a friend&rdquo;:
+</li>
+d29 14
+a42 6
+<li>
+<img src="images/nx_cp_for_friend.png" width="600" height="332" alt="Make a copy for a friend" />
+</li>
+<li>
+Double-clicking on that icon will start a little script that will ask you to insert your USB stick or memory card and then create a bootable version of Navigatrix on that device. If your friend no longer has the icon on her/his desktop, they can also start the script manually by pressing <span class="keyboard_shortcut">[ctrl]+[alt]+[T]</span> which will bring up a terminal window (think "DOS Command Prompt" under Windows). In that terminal window type &ldquo;<span class="code">nxcopy</span>&rdquo; (without the quotes) which will start the shell script to copy Navigatrix.
+</li>
+a43 1
+
+d45 7
+a51 2
+<li>The alternative way to obtain Navigatrix is perhaps just as easy but requires you to have an internet connection "thick" enough to download a 1.3GB file. Go to <a href="http://navigatrix.net/">Navigatrix.net</a> and click on the &ldquo;Download&rdquo; link in the top-center of the Navigatrix home page that opens up. This will bring you to a page that looks like this:
+</li>
+d54 16
+a69 6
+<li>
+<img src="images/nx_download_page.png" width="800" height="548" alt="Navigatrix download page" />
+</li>
+<li>
+If you are currently running a version of Windows on your computer you will need to follow the instructions in &ldquo;Step 1&rdquo; and &ldquo;Step 2&rdquo; on the Download page. Step 1 will download an "ISO image" (a "literal copy" of a boot/install CD/DVD) of the current version of Navigatrix. Step 2 will download a little Windows program that creates a bootable USB stick from that ISO image. If you are currently running Linux Ubuntu you can use Ubuntu's &ldquo;Startup Disk Creator&rdquo; instead of the Windows program to create the bootable USB stick (or SD memory card). Alternatively, you can burn the ISO file to a DVD, using some program that can transfer an ISO image back to a DVD (a simple copy of the ISO to the DVD will not work).
+</li>
+d71 11
+a81 2
+
+<p>One of the nice things about Navigatrix is that you can run the entire system from the bootable USB stick or SD card, with your hard drive turned off and therefore not subjected to the heaving and banging of a moving boat (or the vibration from an engine for that matter). Many Navigatrix users have it installed on their hard drive (it will boot much faster compared to the USB stick) but also keep a bootable USB stick/SD card which they can use under way. In this case it is a good idea to use a stick/card bigger than the required 4GB minimum in order to keep charts and any documents you may want to access under way on the stick. An 8GB stick or card works well for many folks.
+d84 8
+a91 3
+Note that you can access the hard drive from the stick if you need to, for example to copy files to and from the USB stick. The hard drive will show up in the Navigatrix File Manager (see &ldquo;<a href="04_applications.html">The Applications</a>&rdquo;) and can be &ldquo;mounted&rdquo; (i.e. made available for access) by clicking on it. In this case the hard drive will no longer be "parked" though. You will have to &ldquo;eject&rdquo; it again by pressing the little eject symbol next to it in the File Manager when done. 
+</p>
+
+d93 3
+a95 2
+   <li id="prev"><a href="01_nx_what_why.html">Previous<a/></li>
+   <li id="next"><a href="03_installing_nx.html">Next<a/></li>
+d97 19
+d117 2
+a118 2
+ </body>
+ </html>
+@
+
+
+1.9
+log
+@draft sent to Moe
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 02_getting_nx.html,v 1.3 2013/01/24 10:16:42 markus Exp markus $ -->
+d9 6
+d55 5
+@
+
+
+1.3
+log
+@ready for intial releas
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 02_getting_nx.html,v 1.2 2013/01/22 20:22:34 markus Exp markus $ -->
+d43 1
+a43 1
+<p>One of the nice things about Navigatrix is that you can run the entire system from the bootable USB stick or SD card, with your hard drive turned off and therefore not subjected to the heaving and banging of a moving boat (or the vibration from an engine for that matter). Many Navigatrx users have it installed on their hard drive (it will boot much faster compared to the USB stick) but also keep a bootable USB stick/SD card which they can use under way. In this case it is a good idea to use a stick/card bigger than the required 4GB minimum in order to keep charts and any documents you may want to access under way on the stick. An 8GB stick or card works well for many folks.
+d46 1
+a46 1
+Note that ou can access the hard drive from the stick if you need to, for example to copy files to and from the USB stick. The hard drive will show up in the Navigatrix File Manager (see &ldquo;<a href="04_applications.html">The Applications</a>&rdquo;) and can be &ldquo;mounted&rdquo; (i.e. made available for access) by clicking on it. In this case the hard drive will no longer be "parked" though. You will have to &ldquo;eject&rdquo; it again by pressing the little eject symbol next to it in the File Manager when done. 
+@
+
+
+1.2
+log
+@initial version with "flesh", ready for intial release
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 02_getting_nx.html,v 1.1 2013/01/21 19:40:59 markus Exp markus $ -->
+d8 1
+a8 1
+  <title>A Short Introduction to Navigatrix</title>
+d18 1
+a18 1
+The easiest way to get Navigatrix is to find someone who already runs it on their computer. Ask around in any anchorage or marina and you might be in luck. All you will need is a 4GB or greater USB stick or SD memeory card and a computer that is able to boot from such a device (see <a href="installing_nx.html"> &ldquo;Installing Navigatrix&rdquo;</a>). Any current user will have an icon on their desktop labeled &ldquo;Make a copy for a friend&rdquo;:
+d26 1
+a26 1
+Double-clicking on that icon will start a little script that will ask you to insert your USB stick or memory card and then create a bootable version of Navigatrix on that device. If your friend no longer has the icon on her/his desktop, they can also start the script manually by pressing <span class="keyboard_shortcut">[ctrl]+[alt]+[T]</span> which will bring up a terminal window (think "DOS Command Prompt" under Windows). In that terminal window type &ldquo;<span class="code">XXXXX</span>&rdquo; (without the quotes) which will start the shell script to copy Navigatrix.
+a48 7
+
+
+
+   <p>## Download link, &ldquo;Copy for friend&rdquo; ###</p>
+
+##link to how to thread: http://navigatrix.net/viewtopic.php?f=4&t=7
+
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+<!-- $Id$ -->
+d14 38
+d54 2
+@

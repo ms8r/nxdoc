@@ -1,0 +1,855 @@
+head	1.15;
+access;
+symbols;
+locks
+	markus:1.15; strict;
+comment	@# @;
+
+
+1.15
+date	2013.03.11.00.04.00;	author markus;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2013.03.09.19.25.14;	author markus;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2013.02.24.20.07.07;	author markus;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2013.02.23.08.23.30;	author markus;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2013.01.27.08.57.25;	author markus;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2013.01.25.10.24.10;	author markus;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2013.01.24.20.28.18;	author markus;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2013.01.22.08.50.25;	author markus;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2013.01.21.19.42.39;	author markus;	state Exp;
+branches;
+next	;
+
+
+desc
+@"Configuring nx" section
+@
+
+
+1.15
+log
+@version for MAR 2013 release (incl. sw installation under unix)
+@
+text
+@<!-- $Id: 06_config_nx.html,v 1.14 2013/03/09 19:25:14 markus Exp markus $ -->
+
+ <?xml version="1.0" encoding="UTF-8"?>
+
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+ <html xmlns="http://www.w3.org/1999/xhtml">
+
+ <head>
+
+ <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+ <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+ <title>A Short Introduction to Navigatrix</title>
+
+ </head>
+
+ <body>
+
+ <div class="pagebanner">
+ <div id="prevNextContainer">
+ <li id="toc"><a href="index.html#toc">Table of Contents</a></li>
+ <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li>
+ </div>
+ </div>
+
+ <h1 id="sec_config_nx">Configuring and Customizing Navigatrix</h1>
+
+ <p>One of Navigatrix strength is that it just works out of the box, without the need for constant updates and patches. However, you may want to customize some of its features and/or to install additional software. To do so, it helps to understand a little about how Navigatrix is set up and where its various components can be found.</p>
+
+ <h2 id="subsec_configLXDE">The LXDE Desktop</h2>
+
+ <p>The core of Navigatrix is a Unix flavor called Linux and among the available sub-flavors of Linux Navigatrix is based on Ubuntu. Naked Unix interacts with the user through a command line interface (think &ldquo;DOS terminal window&rdquo; in Windows) and Navigatrix runs what is called a "desktop environment" on top of the command line interface to provide a Windows-like user interface (tuned for simplicity, speed, and robustness which makes it look a bit different). The desktop environment Navigatrix uses is called the <span class="emphasis">LXDE</span> (for &ldquo;Light X11 Desktop Environment&rdquo;, X11 being a &ldquo;window standard&rdquo; under unix) which is open source software designed specifically to be very light-weight (i.e. being spartan in its use of system resources). LXDE is started when you boot Navigatrix and it provides the desktop interface, the panel at the bottom of the screen with menu (the manta symbol - equivalent to the Windows "Start" menu"), application launch bar, task bar (windows list), and a system tray. All of these will all look familiar to Windows users. It relies on Openbox (a subsidiary program) as a window manager which renders the windows and menus that applications need for their user interfaces. In addition, it uses PCManFM as a light-weight file manager with a similar look and feel as the Windows file manager.</p>
+
+ <p>You can customize most elements of LXDE (e.g. appearance, what short-cut icons to show in the application launch bar) by right-clicking on the corresponding element and then choosing the relevant "Settings" item. The resulting dialogues should be largely self-explanatory. </p>
+
+ <p class="centered"><img src="images/LX_panel_composite_cropped.gif" width="732" height="413" alt="LXDE Panel Components" /></p>
+
+ <p>Note that the application icons in the Application Launch Bar are different from the Navigatrix-default because the screenshot was taken with a customized version of Navigatrix.</p>
+
+ <p>The picture below shows an example of the overall Panel Preferences dialogue (right click on any section of the panel and chose <span class="menu_item">Panel Settings</span>).</p>
+
+ <p class="centered"><img src="images/panel_preferences.gif" width="300" height="273" alt="Panel Preferences Dialogue" /></p>
+
+ <p>To change the appearance and behavior of windows (colors, placement of controls, border sizes, ...) you can use the Openbox configuration manager which is available under the <span class="menu_item">Manta Menu -&gt; Preferences -&gt; Configuration Manager</span>. </p>
+
+ <p class="centered"><img src="images/openbox_config_mgr.gif" width="400" height="347" alt="OpenBox Configuration Manager" /></p>
+
+ <p>Other appearance settings (e.g. widget style, icon theme) can be adjusted under <span class="menu_item">Manta Menu -&gt; Preferences -&gt; Appearance Settings</span>.</p>
+
+ <h2 id="subsec_configAppsUnderLXDE">Running and Configuring Applications under LXDE</h2>
+
+ <p>An important aspect of LXDE is how it provides access to the applications that come with Navigatrix (or others which you may install). The figure below shows an overview of how the different bits and pieces interact in this context.</p>
+
+ <p class="centered"><a id="figure_LXDE_config_overview"></a><img src="images/LXDE_config_overview.gif" width="756" height="454" alt="LXDE Configuration Overview" /></p>
+
+ <h3>Application Executable Files</h3>
+
+ <p>Applications under Navigatrix are executable files (think DOS/Windows *.exe) that reside in three different directories (see box &ldquo;Application Executable Files&rdquo; in the figure above):</p>
+
+ <ul>
+ <li><span class="path">/usr/bin/</span> hosts most of the applications that are accessible via the Manta Menu, plus many subsidiary and utility programs. </li>
+ </ul>
+
+ <ul class="no_bullet"> <li><img src="images/usr_bin_contents.gif" width="600" height="456" alt="/usr/bin/ contents" /></p>
+
+ </ul>
+
+ <ul>
+ <li><span class="path">/opt/</span> contains a few additional programs like the zyGrib GRIB viewer and the Calibre library manager. It also contains the virtual &ldquo;C: drive&rdquo; that is used by Wine, the Windows emulator that enables you to run Windows programs under Unix (see &ldquo;<a href="#subsubsec_installingWindowsApp">Installing Windows Applications</a>&rdquo;). </li>
+ </ul>
+
+ <ul class="no_bullet"> <li><img src="images/opt_contents.gif" width="600" height="402" alt="/opt/ contents" /></p>
+
+ </ul>
+
+ <ul>
+ <li><span class="path">usr/local/bin/</span> contains the executable file for the OpenCPN chartplotter (admittedly a bit of an odd placement, because this directory is mainly used to store wrapper shell scripts; see below). </li>
+ </ul>
+
+ <h3 id="subsubsec_appWrappers">Application Wrapper Shell Scripts</h3>
+
+ <p>When you call many of these applications via the Manta Menu, Navigatrix does a little additional housekeeping prior to actually launching the application executable file. For example, Navigatrix may update the applications configuration file with your latest GPS position (see &rdquo;<a href="#sec_GPS">GPS and Navigatrix</a>&rdquo;). This housekeeping is done by <span class="emphasis">shell scripts</span> (think Windows *.BAT files) that provide a &ldquo;wrapper" around the actual application. These shell scripts are stored under <span class="path">/usr/local/bin/</span> (see box &ldquo;Application Wrapper Shell Scripts&rdquo; in the <a href="#figure_LXDE_config_overview">figure above</a>).</p>
+
+ <p>To illustrate this, let&#146;s look at the Planetarium application that can be accessed via Manta<span class="menu_item"> Menu -&gt; Navigation -&gt; Planetarium</span>.</p>
+
+ <p class="centered"><img src="images/planetarium_menu.gif" width="377" height="276" alt="Planetarium in Manta Menu" /></p>
+
+ <p>The Planetarium application shows where stars and planets can be seen in the sky from a chosen location and at a chosen time. &nbsp;By default, the time is the current system time in the current time zone (these can be adjusted under <span class="menu_item">Manta Menu -&gt; Preferences -&gt; Time and Date</span>). The location can be picked from a list of locations which the application reads from a configuration file. The actual application executable is called <span class="path">stellarium</span> and resides under <span class="path">/usr/bin/</span>:</p>
+
+ <p class="centered"><img src="images/stellarium_in_bin.gif" width="600" height="402" alt="Stellarium executable in /usr/bin/" /></p>
+
+ <p></p>
+
+ <p>However, when you click on <span class="menu_item">Planetarium</span> item in the Manta Menu, you actually call a shell script called <span class="path">planetarium</span>, that resides under <span class="path">/usr/local/bin/</span>:</p>
+
+ <p class="centered"><img src="images/planetarium_shell_script_in_local_bin.gif" width="600" height="402" alt="Planetarium shell script in /usr/local/bin/" /></p>
+
+ <p></p>
+
+ <p>The contents of this shell script is relatively simple (you can look at it yourself by right-clicking on the <span class="path">planetarium</span> file and choosing <span class="menu_item">Open With... -&gt; Text Editor</span>). Note that the numbers in front are simply line numbers that are not part of the script. There is no need to understand the details of the script but it helps to illustrate the concept at a high level.</p>
+
+ <ol>
+ <li><span class="code">#!/bin/bash</span></li>
+ <li><span class="code">cfg=/home/$USER/.stellarium/data/user_locations.txt</span></li>
+ <li><span class="code">echo &gt;$cfg -e "Navigatrix GPS Location\t\tAutomatic\t\x00\t147127\t"$(cat /etc/nx.lat)"\t"$(cat /etc/nx.lon)"\t3\t2\t\tEarth\t"</span></li>
+ <li><span class="code">stellarium</span> </li>
+ </ol>
+
+ <p>Line 1 simple defines that this file is a shell script. Lines 2 and 3 then apply some clever manipulation to insert your most recent GPS position in one of the configuration files that Stellarium reads when it starts up. Line 4 finally launches the <span class="path">stellarium</span> application executable which will now read the updated configuration file and show you the sky as it looks from your most recent GPS position. &nbsp;Navigatrix does this kind of &ldquo;position housekeeping&rdquo; for quite a few applications - a very handy feature on a computer that is used for navigation on a moving vessel.</p>
+
+ <h3>LXDE Desktop Configuration Files</h3>
+
+ <p>The link between the application wrapper shell script and the Manta Menu (or between the application executable and the Manta Menu for applications that don&#146;t have wrappers) is established via so called <span class="emphasis">desktop configuration files</span> with the extension <span class="path">.desktop</span>. These reside under <span class="path">/usr/share/applications/</span>. One such file exists per application that is to be accessed via the Manta Menu or the LX Panel&#146;s launch bar. The figure below shows the <span class="path">/usr/share/applications/</span> directory with Stellarium&#146;s desktop configuration file highlighted. Note that for these files the file manager displays not the actual filename (which in this case is <span class="path">stellarium.desktop</span>) but the application title that is defined in the file (which is &ldquo;Planetarium&rdquo;, see below).</p>
+
+ <p class="centered"><img src="images/planetarium.desktop_location.gif" width="600" height="402" alt="planetarium.desktop file /usr/share/applications/" /></p>
+
+ <p>If you open the file manager, go to <span class="path">/usr/share/applications/</span><span style="font-weight:bold" xml:lang="en-US" lang="en-US">,</span> right-click on &ldquo;Planetarium&rdquo;, and choose <span class="menu_item">Open With ... -&gt; Notepad</span>, you will see the filename <span class="path">stellarium.desktop</span> displayed in the editor's title bar:</p>
+
+ <p class="centered"><img src="images/stellarium.desktop_in_editor.gif" width="458" height="351" alt="planetarium.desktop in editor" /></p>
+
+ <p>The first three lines look the same in all the desktop configuration files in Navigatrix:</p>
+
+ <ol>
+ <li><span class="code">[Desktop Entry]</span> at the top of the file indicates that this is a *.desktop file. </li>
+ <li>The <span class="code">Type</span> entry simply states that this configuration file points to an application. </li>
+ <li><span class="code">Encoding</span> defines that UTF-8 character encoding is used. </li>
+ </ol>
+
+ <p>The next entries are specific to Planetarium / Stellarium:</p>
+
+ <ol start="4"> <li><span class="code">Name</span> defines that this application will show up as &ldquo;Planetarium" in the Manta Menu. This is also the name under which the file manager displays the desktop configuration file.</li>
+ <li><span class="code">GenericName</span> provides a description for the menu entry.</li>
+ <li><span class="code">Exec</span> points to the program that is to be launched for this application. In this case it is the <span class="path">planetarium</span> shell script wrapper, which will update the position information as described above and then call the <span class="path">stelllarium</span> application executable file. Note that there is path in front of &ldquo;planetarium&rdquo; because the directory <span class="path">/usr/local/bin/</span> (as well as <span class="path">/usr/bin/</span>) is part of Navigatrix&#146; &ldquo;search path&rdquo;, i.e. the list of directories where it will look for executable programs if no path is provided.</li>
+ <li><span class="code">Icon</span> points to an image file to be used as the application&#146;s icon in the Manta Menu and the Launch Bar. Navigatrix stores these icon image files under <span class="path">/usr/share/pixmaps</span> (you can find the file <span class="path">stellarium.xpm</span> there). No path and no file extension is required if the icon can be found in this directory.</li>
+ <li><span class="code">StartupNotify=false</span> defines that startup notification is turned off.</li>
+ <li><span class="code">Terminal=false</span> states that the program will not run in a terminal (This is the setting for all applications that provide their own GUI).</li>
+ <li><span class="code">Categories</span> defines the category under which the application will be displayed in the Manta Menu (&ldquo;Navigation&rdquo;) in this case. Multiple categories can be specified for one application, with individual entries separated by a semicolon (e.g. &nbsp;<span class="code">Categories=Navigation;Education)</span>.</li>
+ <li><span class="code">Comment</span> defines a descriptive text that is displayed as a &ldquo;tool tip" when the mouse pointer hovers of the corresponding entry in the Manta Menu.</li>
+ <li><span class="code">Comment [fr]</span> defines the descriptive text when Navigatrix is run in French. </li>
+ </ol>
+
+ <p>Once you have created a desktop configuration file for an application under <span class="path">/usr/share/applications/</span> (or <span class="path">usr/local/share/applications/</span> which is a good place to put desktop configuration files you may create yourself in order to keep them apart from the ones that come with Navigatrix), the application will show up in the Manta Menu and also be available in the configuration dialogues for the Panel&#146;s Launch Bar. Note that the list of applications on the left is different from the Navigatrix-default because the screenshot was taken with a customized version of Navigatrix:</p>
+
+ <p class="centered"><img src="images/appLaunchBar_planetarium.gif" width="450" height="301" alt="Planetarium entry in Application Launcher" /></p>
+
+ <h2 id="subsec_configAddApps">Installing Additional Software</h2>
+
+ <p> For the sake of this Short Introduction we can distinguish three principal ways to install additional applications under a Linux-based system like Navigatrix:
+
+<ol>
+
+<li><span class="list_leader">Compiling the application from source code</span>: This is beyond the scope of this Short Introduction. In fact, if you&#146;re thinking about compiling from source, you probably won&#146;t be reading this anyway...</li>
+
+<li><span class="list_leader">Installing binaries from a Linux repository</span>: This installs an already compiled (= binary) version of an application, similar to the way you would install software under MS Windows. However, these application binaries are maintained in and available from software repository servers. The concept of software repositories and how to access these is explained below.</li>
+
+<li><span class="list_leader">Installing MS Windows applications under &ldquo;Wine&rdquo;</span>, a compatibility layer for running Windows applications on Linux. This will also be covered <a href="06_config_nx.html#subsubsec_installingWindowsApp">below</a>.</li>
+
+</ol>
+
+
+ <h3 id="subsubsec_installingFromRep">Installing Applications From a Linux Repository</h3>
+
+   <p >Under Linux, software is organized in &ldquo;packages&rdquo; which are maintained in repositories on central serves. Linux systems (such as Navigatrix) come with a Package Manager that allows you to interface with these repository servers and to manage adding and removing software to and from your system in an &ldquo;orderly fashion.&rdquo;</p>
+   
+   <p >This is a bit different from what you may be used from a MS Windows environment. There, a software application is typically distributed by a commercial vendor as a self-contained collection of files which are shipped on a CD/DVD together with some executable installer program that can be run to install the files in that collection to run on top of MS Windows as a new application. You basically trust the vendor that installing its application in this manner will not negatively impact any existing functionality on your system and not be at logger heads with other applications you have installed.</p>
+   
+   <p >Linux takes a slightly different approach to software installation. Applications (which have typically been developed as open source projects) will be added to a central software repository by &ldquo;the community&rdquo; or commercial distributors and are available for download and installation from designated repository servers. These repositories also maintain all the dependencies between different packages. When you request an application from a repository the process (which is explained further below) will automatically check if there are any subsidiary packages that the requested application relies on and which have not been installed on your system yet. It will then include these subsidiary packages into the download and the installation. This more centralized approach to software distribution somewhat reduces the risk of different applications causing each other trouble. If there is a chance for conflict (for example, because two applications require different versions of the same subsidiary package) you will be notified of the issue prior to the installation and can at least make an informed choice.</p>
+   
+   <p >This may all sound complicated but is actually quite straight forward once we look at the tools involved and an example further below. </p>
+   
+   <p >The tool used to connect to software repositories and to download and install software packages is the &ldquo;Synaptic Package Manager&rdquo; which is accessible from the <span class="menu_item">Manta Menu</span> under <span class="menu_item">Preferences-&gt;Package Manager</span></p>
+
+ <p class="centered"><img src="images/synaptic_in_manta_menu.gif" width="300" height="452" alt="Password entry" /></p>
+
+   
+   <p >To run the Package Manager you will need administrative (&ldquo;root&rdquo;) rights. When you launch the application you will therefore be prompted for the password that you defined when <a href="03_installing_nx.html#install_password">installing Navigatrix</a> (provided you haven&#146;t changed it since then).</p>
+   
+ <p class="centered"><img src="images/synaptic_password.gif" width="300" height="200" alt="Password entry" /></p>
+
+   <p >A word of caution here: With great power comes great responsibility. The Package Manager allows you to perform changes to the core of your system. You can render your system unusable by using the Package Manager carelessly. This should not be an issue as long as we&#146;re simply talking about adding, updating or removing applications and are not messing with the system core. Just make sure you understand what you are doing in each step when working with the Package Manager.</p>
+   
+   <p >There is detailed documentation for the Package Manager that comes with your Navigatrix installation. We will therefore only illustrate its use by walking through a simple installation example which should be sufficient to get you started. For more detailed information you can access the offline manual by typing <a href="file:///usr/share/synaptic/html/index.html">file:///usr/share/synaptic/html/index.html</a> in the address bar of your web browser:</p>
+   
+ <p class="centered"><img src="images/synaptic_manual.gif" width="500" height="237" alt="Synaptic manual" /></p>
+   
+   <p >But now back to the Package Manager's main window which will open up after entering your password:</p>
+   
+ <p class="centered"><img src="images/synaptic_main_window.gif" width="800" height="515" alt="Synaptic main window" /></p>
+   
+   <p >The Package List on the top right shows the software packages which are available from the repositories that are configured in the Package Manager (see the <a href="file:///usr/share/synaptic/html/ar01s04.html">manual</a> for details on how to configure additional repositories should you ever need to do so). You can narrow this list down by using the Category Selector on the left of the main window. Alternatively, you can search for packages by either entering a search term in the &ldquo;Quick search&rdquo; box on the toolbar or by clicking the &ldquo;Search&rdquo; icon to the right of the Quick search box:</p>
+   
+ <p class="centered"><img src="images/synaptic_search.gif" width="400" height="212" alt="Synaptic search" /></p>
+   
+   <p >For our example, let&#146;s assume we want to install Lingot, a handy little musical instrument tuner that picks up a tone via your computer&#146;s built-in microphone and shows you whether you&#146;re on or off tune. Its interface looks like a guitar tuner but it can be used for any instrument - including the on-board piano. You will need an Internet connection to try this. The application is very small (download size &lt; 100 kB) so even a marginal connection should do (if you have one of those you may wish to skip the refresh of the Package List in the next step).</p>
+   
+   <p >Before we go and look for Lingot in the Package List it is advisable to reload the list of available packages from the repository servers. Otherwise what you see in the Package Manager&#146;s Package List may be out of date and not accurately reflect what's on the server. To update the list of available packages simply press the &ldquo;Relaod&rdquo; button on the toolbar:</p>
+   
+ <p class="centered"><img src="images/synaptic_reload.gif" width="400" height="205" alt="Synaptic reload" /></p>
+   
+   <p >This will take a moment and show you a progress window while it is downloading the latest package information.</p>
+   
+   <p >Once it is done type &ldquo;lingot&rdquo; (without the quotes, capitalization doesn't matter) in the Package Manager&#146;s &ldquo;Quick search&rdquo; bar. Make sure that you have selected &ldquo;All&rdquo; in the Category Selector on the left in order not to filter out Lingot from the search results. The Package list will now only show you the one matching entry for Lingot:</p>
+   
+ <p class="centered"><img src="images/synaptic_lingot_search.gif" width="600" height="404" alt="Lingot search result" /></p>
+   
+   <p >The left-most column you see in the Package list window (the one labeled&nbsp;&ldquo;S&rdquo; - assuming you haven&#146;t changed this yet under <span class="menu_item">Settings-&gt;Preferences-&gt;Columns and Fonts</span>) shows the package&#146;s status. The empty little box you see in the example indicates that this package has not been installed on your computer yet. (For a list of the possible stati and their corresponding icons you can look under <span class="menu_item">Help-&gt;Icon Legend</span>.)</p>
+   
+   <p >The empty column between the status indicator and the package name indicates the level of support provided for this package. If it&#146;s empty it means that you cannot rely on this package being maintained in the repository in the future but this doesn&#146;t bother us in this example.</p>
+   
+   <p >The next columns simply list the package name, the installed version (in case the package displayed is already installed on your machine), the latest available version in the repository, and a short description.</p>
+   
+   <p >To see more information about a package, simply select it in the package list  and click on the Properties button in the toolbar:</p>
+   
+ <p class="centered"><img src="images/synaptic_lingot_properties.gif" width="600" height="403" alt="Lingot properties" /></p>
+   
+   <p >The tabs in the properties window should be self-explanatory. It&#146;s worth looking at the &ldquo;Dependencies&rdquo; tab which lists all the other packages that Lingot will require to run. These are typically software libraries that provide basic functionality shared by many applications. Most of these will likely already be installed on your system. If not, the Package Manager will automatically include them in the download and install them together with Lingot.</p>
+   
+   <p >Now let&#146;s close the properties window and proceed with the actual installation. This is a two-step process:</p>
+   
+<ol>
+   <li>Mark the package for installation. To do so, right click on the package in the Package List and select &ldquo;Mark for installation&rdquo;.</p>
+</ol>   
+
+<ul class="no_bullet"> 
+
+<li><img src="images/synaptic_lingot_markforinstall.gif" alt="Marking Lingot for installation" width="600" height="352" /></li>
+   
+   <li>This will change the icon in the &ldquo;Status&rdquo; column&nbsp;which will now display the &ldquo;Marked for installation&rdquo; symbol:</li>
+   
+<li><img src="images/synaptic_lingot_markforinstall_icon.gif" alt="Marking Lingot for installation" width="300" height="117" /></li>
+
+</ul>
+   
+<ol start="2">   
+<li> To actually start the download and installation of Lingot now click on the &ldquo;Apply&rdquo; button in the toolbar:</li>
+</ol>
+   
+<ul class="no_bullet"> 
+
+<li><img src="images/synaptic_lingot_applybutton.gif" alt="Applying marked changes" width="400" height="145" /></li>
+
+   <li>This will bring up a window summarizing the changes that will be made to your system if your proceed with the installation:</li>
+   
+<li><img src="images/synaptic_lingot_summary.gif" alt="Summary of changes before installation" width="400" height="415" /></li>
+   
+   <li>In this case we&#146;re being informed that the package cannot be authenticated (which - for all we know - is OK in this case), that one package is to be installed (lingot), and that a whole load of subsidiary package will remain unchanged because they&#146;re already installed. Depending on what&#146;s already installed on your system this listing may look slightly different if you try this on your computer.</li>
+   
+   <li >Clicking on &ldquo;Apply&rdquo; will start the download and installation during which the progress window below will be displayed:</li>
+   
+<li><img src="images/synaptic_lingot_progress.gif" alt="Installation progress" width="350" height="206" /></li>
+   
+   <li >Once it&#146;s done it will display a confirmation that all changes have been applied:</li>
+   
+<li><img src="images/synaptic_lingot_changesapplied.gif" alt="Installation complete" width="400" height="359" /></li>
+   
+   <li>Notice that the Lingot entry in the Package List now shows the icon for &ldquo;Installed&rdquo; in the status column and that it now lists an installed version:</li>
+   
+<li><img src="images/synaptic_lingot_packlistafterinstall.gif" alt="Package list after installation" width="400" height="166" /></li>
+
+</ul>
+   
+   <p >That&#146;s it. You should now see Lingot as an entry in the <span class="menu_item">Manta Menu</span> under <span class="menu_item">Sound &amp; Video</span>:</p>
+   
+ <p class="centered"><img src="images/synaptic_lingot_inmantamenu.gif" width="600" height="230" alt="Lingot inn the Manta Menu" /></p>
+   
+   <p >A few comments before you get out the guitar / ukulele or whatever you use on board for musical entertainment:</p>
+   
+<ul>
+   <li> Software Repositories may also reside on CDs/DVDs or in a directory within the file system on your computer. These can be configured in the Package Manager in the same way as the pre-configured repository servers used in the example above. See <a href="file:///usr/share/synaptic/html/ar01s04.html">file:///usr/share/synaptic/html/ar01s04.html</a> in the offline manual for the Package Manager.</li>
+   
+   <li>The Synaptic Package Manager is in essence simply a graphical user interface to a command line tool called &ldquo;<span class="code">apt-get</span>&rdquo;. In many places in the Navigatrix Support discussion database you will find instructions stating something like &ldquo;... at the terminal prompt type <span class="code">sudo apt-get install ... </span>&rdquo; followed by the name of some software package. This triggers the same download and installation process as in the example above but is a bit quicker if you know the name of the package you need to install and you don&#146;t mind working in a terminal window (after all -&nbsp;&ldquo;In the beginning was the command line&rdquo;...).</li>
+   
+   
+ <li>Downloaded packages are kept in a local archive on your computer in <span class="path">/var/cache/apt/archives/</span>:</li>
+
+</ul>
+
+<ul class="no_bullet"> 
+   
+<li><img src="images/synaptic_apt_archive.gif" alt="APT archive in File Manager" width="600" height="376" /></li>
+   
+   <li >Note that these are not the actual application executable files but the downloaded packages from which the actual application files were extracted.</li>
+   
+   <li>If you need to re-install something while being at anchor in a location without Internet access, you can fall back on this archive. Let&#146;s say you have removed Lingot after going through the example above (via the Package Manager - simply right-click on an installed package and select &ldquo;Mark for Removal&rdquo; rather than &ldquo;Mark for Installation&rdquo;). But now you have picked up a ukulele on some remote Polynesian island (no Internet) and need the tuner again. Press <span class="code">[ctrl]+[alt]+[T]</span> to open a terminal window and at the prompt type </li>
+
+<li><span class="code">sudo apt-get -m --no-download install lingot</span></li> 
+
+<li>This will re-install the software from the local archive in <span class="path">/var/cache/apt/archives/</span>. The &ldquo;<span class="code">sudo</span>&rdquo; is required to run the <span class="code">apt-get</span> with administrator (&ldquo;root&rdquo;) privileges (and will therefore prompt you for your password). The <span class="code">-m</span> option tells The <span class="code">apt-get</span> to ignore any missing subsidiary packages (which you may not have in your local archive) and to hope for the best. Make sure you type one minus sign in front of the &ldquo;</span class="code">m</span>&rdquo; and two minus signs in front of the &ldquo;</span class="code">no-download</span>&rdquo; option with no paces between the minus signs and the following option. </li>
+   
+   <li>In a pinch you can also use these downloaded packages to share an application with another disconnected boat at anchor (however, missing subsidiary packages on which the application depends may cause an issue in this case). You can give your neighbour a USB stick with the relevant package file (ending in &ldquo;<span class="path">.deb</span>&rdquo;). The neighbour - also running Navigatrix or another Linux flavour - can copy this file to his or her hard disk, open a terminal window, and type: ﻿</li>
+
+<li><span class="code">sudo dpkg -i /[complete path to the package file]/[complete name of the package file]</span></li>
+
+<li>dpkg is another command line tool used to install Debian packages (the ones that end in &ldquo;.deb&rdquo;). In the example above we could have also re-installed Lingot by typing</li> 
+
+<li><span class="code">sudo dpkg -i /var/cache/apt/archives/lingot_0.7.4-2_i386.deb</soan></li>
+
+<li>at the terminal window&#146;s command prompt. Note that the latter approach via <span class="code">dpkg</span> requires the full path and filename whereas <span class="code">apt-get</span> only uses the package name (&ldquo;lingot&rdquo; rather than the file name &ldquo;lingot_0.7.4-2_i386.deb&rdquo;). Also note that the Synaptic Package Manager application must be closed when running <span class="code">dpkg</span>. Otherwise <span class="code">dpkg</span> cannot access the status database that keeps track of the various packages&#146; status on your computer (not-installed, installed, ...).</li>
+   
+</ul>
+
+<ul>   
+
+<li>Finally, a word about upgrades. The Package Manager also provides an option to mark all possible upgrades for installation. This will check for all your installed packages if a newer version is available from a repository and, if so, mark this newer version for installation (you can also do this for individual packages). Use this option only with extreme care and only if you have a good reason to replace an existing package by a newer version. The software industry has been very good at conditioning us to believe that &ldquo;upgrade = newer = better&rdquo; - which in many cases is simply not true and/or heavily depends on what you intend to do with an application. If an application is stable and does what you need it to do, replacing it by a newer version will - in many cases - not gain you anything but introduce a less mature and less stable product. The applications that ship with Navigatrix have been carefully put together to do what they need to do without getting in each others&#146; way. Hence Navigatrix may not include the latest available version of an application but one that is robust and works with all the other stuff in Navigatrix. Keep this in mind before upgrading to newer versions of packages (for which there may be good reasons in specific cases).</li>
+
+</ul>
+
+
+<h3 id="subsubsec_installingWindowsApp">Installing Windows Applications</h3>
+
+ <p>Coming soon, currently under construction ...</p>
+
+ <!-- <p>
+
+### Wine, placement of programs, desktop config files ###</p>
+
+ <p>### Navimail Skyfile as example ###</p>
+
+ --> <hr /> <div id="prevNextContainer">
+ <li id="prev"><a href="05_gps.html">Previous<a/></li>
+ <li id="next"><a href="07_hidden_treasures.html">Next<a/></li>
+ </div>
+
+ <!-- Start of StatCounter Code for Default Guide -->
+
+ <script type="text/javascript">
+ var sc_project=8655246; var sc_invisible=1; var sc_security="6dc9f5b2"; var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www."); document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>"); 
+</script>
+
+ <noscript>
+<div class="statcounter">
+<a title="free web stats" href="http://statcounter.com/free-web-stats/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/8655246/0/6dc9f5b2/1/" alt="free web stats"></a></div>
+</noscript>
+
+ <!-- End of StatCounter Code for Default Guide -->
+
+ </body>
+
+ </html> 
+@
+
+
+1.14
+log
+@version with some install doc on synaptic to be shortened
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 06_config_nx.html,v 1.13 2013/02/24 20:07:07 markus Exp markus $ -->
+d148 1
+a148 1
+ <p> There are three principal ways to install additional applications under a Linux-based system like Navigatrix:
+d152 1
+a152 1
+<li>Compiling the application from source code: This is beyond the scope of this short introduction. In fact, if you're thinking about compiling from source, you probably won't be reading this anyway...</li>
+d154 1
+a154 1
+<li>Installing binaries from a Linux repository: This installs an already compiled (= binary) version of an application, similar to the way you would install software under MS Windows. However, these application binaries are maintained in and available from softeare repository servers. The concept of software repositories and how to access these is explained below.</li>
+d156 1
+a156 1
+<li>Installing MS Windows applications under WINE, the "WINdows Emulator" that is available on Navigatrix (and mayn other Unix/Linux sytems). This will also be covered below.</li>
+d161 1
+a161 1
+ <h3 id="subsubsec_installingFromRep>Installing Applications From a Linux Repository"</h3>
+d163 60
+a222 1
+ <p>Under Linux, software is organized in "packages" which are maintained in repositories on central serves. Linux systems (such as Navigatrix) come with a Package Manager that allows you to interface with these repository servers and to manage adding and removing software to your system in an orderly fashion.
+d224 1
+a224 28
+This is quite different from what you may be used from a MS Windows environment. There, a software applicaton is typically distributed by a commercial vendor as a self-contained collection of files which are shipped together with some executable installer program that can be run to install the files in that collection to run on top of MS Windows as a new application. You basically trust the vendor that installing its application in this manner will not negatively impact any exisiting functionalty on your system and not be at logger heads with other applications you have installed.
+
+Coming from an open source heritage, Linux can afford to take a different approach to software installation. Applications (which have typically been developed as open source projects) will be added to central software repositories by "the community" and are available for download and installation from designated repository servers. These repositories also maintain all the dependencies between different packages. When you request an application from a repository the process (which is explained further below) will automatically check if there are any subsidiary packages that the requested application relies on and which have not been installed on your system yet. It will then include these subsidiary packages into the download and the installation. This more centralized approach somewhat reduces the risk of different applications causing each other trouble. If there is a chance for conflict (for example, because two applications require different versions of the same subsidiary package) you will be notified of the issue prior to the installation and can at least make an informed choice.
+
+This may all sound complicated but is actually quite straight forward once we look at the tools involved and an example further below. 
+
+The tool used to connect to a software repository and to download and install software packages is the Synaptic Package Manager which is accessible from the Manta Menu under Preferences -> Package Manager
+
+## insert picture
+
+To run the Package Manager you will need administrative ("root") rights. The application will therefore prompt you for the password that you defined when installing Navigatrix ##link## (provided you haven't changed it sincce then).
+
+##insert picture 
+
+A word of caution here: With great power comes great responsibility. Package Manager allows you to perform changes on the core of your system. You can render your system unusable by using the Package Manager carelessly. This should not be an issue as long as we're simply talking about adding, updating or removing applications and are not messing with the system core. Just make sure you understand what you are doing in each step when working with the Package Manager.
+ 
+There is detailed documentation for the Package Manager that comes whith your Navigatrix installation. We will therefore only cover the key concepts here and refer to the documentation for further details. You can access this offline maual by typing file:///usr/share/synaptic/html/index.html in the address bar of your web browser:
+
+## insert picture synaptic_manual
+
+But now back to the Package Manager's main window which will open up after entering your password:
+
+## insert picture synaptic_main_window
+
+The Package List on the top right packages available from the repositories which you are configured in the Package Manager (see the manual for details on how to configure additional repositories should you ever need to do so). You can narrow this list down by using the Category Selector on the left of the main window. Alternatively, you can search for packages by either entering a search term in the "Quick search" box on the toolbar or by clicking the "Search" icon to the right of the Quick search box:
+
+
+## insert picture sysnaptic_search
+d226 13
+d240 1
+a240 1
+Before you do anything with these packages it is advisable to reload the list of available packages from the repository servers. Otherwise what you see in the Package Manager's Package List may be out of date and not accurately reflect what's on the server. To update the list of available packages simply press the "Relaod" button on the toolbar (requires an internet connection):
+d242 59
+a300 1
+## insert picture synaptic_reload
+d302 1
+a302 1
+To see more information about a package, simply select it in the package list 
+d304 1
+d306 1
+@
+
+
+1.13
+log
+@cleaned up version (cuht) with site_logo.gif page banner
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 06_config_nx.html,v 1.12 2013/02/23 08:23:30 markus Exp markus $ -->
+d148 1
+a148 1
+ <h3>Installing Applications From a Linux Repository</h3>
+d150 50
+a199 1
+ <p>Coming soon, currently under construction ...</p>
+a200 1
+ <!-- <p>
+a201 1
+## Repository / Package Manager ###</p>
+a202 1
+ <p">## Lingot as example ###</p>
+d204 1
+a204 1
+ --> <h3 id="subsubsec_installingWindowsApp">Installing Windows Applications</h3>
+d234 1
+a234 1
+ </html> @
+
+
+1.12
+log
+@added nx logo in banner
+@
+text
+@d1 8
+a8 4
+<!-- $Id: 06_config_nx.html,v 1.11 2013/01/27 08:57:25 markus Exp markus $ -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+d10 7
+a16 5
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <link type="text/css" rel="stylesheet" href="nx_doc_stylesheet.css" />
+  <title>A Short Introduction to Navigatrix</title>
+</head>
+ 
+d19 158
+a176 148
+<div class="pagebanner">
+    <div id="prevNextContainer">
+       <li id="toc"><a href="index.html#toc">Table of Contents</a></li> 
+       <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li> 
+    </div>
+</div>
+
+   <h1 id="sec_config_nx">Configuring and Customizing Navigatrix</h1>
+
+   <p>One of Navigatrix strength is that it just works out of the box, without the need for constant updates and patches. However, you may want to customize some of its features and/or to install additional software. To do so, it helps to understand a little about how Navigatrix is set up and where its various components can be found.</p>
+
+   <h2 id="subsec_configLXDE">The LXDE Desktop</h2>
+
+   <p>The core of Navigatrix is a Unix flavor called Linux and among the available sub-flavors of Linux Navigatrix is based on Ubuntu. Naked Unix interacts with the user through a command line interface (think &ldquo;DOS terminal window&rdquo; in Windows) and Navigatrix runs what is called a "desktop environment" on top of the command line interface to provide a Windows-like user interface (tuned for simplicity, speed, and robustness which makes it look a bit different). The desktop environment Navigatrix uses is called the <span class="emphasis">LXDE</span> (for &ldquo;Light X11 Desktop Environment&rdquo;, X11 being a &ldquo;window standard&rdquo; under unix) which is open source software designed specifically to be very light-weight (i.e. being spartan in its use of system resources). LXDE is started when you boot Navigatrix and it provides the desktop interface, the panel at the bottom of the screen with menu (the manta symbol - equivalent to the Windows "Start" menu"), application launch bar, task bar (windows list), and a system tray. All of these will all look familiar to Windows users. It relies on Openbox (a subsidiary program) as a window manager which renders the windows and menus that applications need for their user interfaces. In addition, it uses PCManFM as a light-weight file manager with a similar look and feel as the Windows file manager.</p>
+   <p>You can customize most elements of LXDE (e.g. appearance, what short-cut icons to show in the application launch bar) by right-clicking on the corresponding element and then choosing the relevant "Settings" item. The resulting dialogues should be largely self-explanatory. </p>
+
+   <p class="centered"><img src="images/LX_panel_composite_cropped.gif" width="732" height="413" alt="LXDE Panel Components" /></p>
+
+   <p>Note that the application icons in the Application Launch Bar are different from the Navigatrix-default because the screenshot was taken with a customized version of Navigatrix.</p>
+   <p>The picture below shows an example of the overall Panel Preferences dialogue (right click on any section of the panel and chose <span class="menu_item">Panel Settings</span>).</p>
+   
+   <p class="centered"><img src="images/panel_preferences.gif" width="300" height="273" alt="Panel Preferences Dialogue" /></p>
+
+   <p>To change the appearance and behavior of windows (colors, placement of controls, border sizes, ...) you can use the Openbox configuration manager which is available under the <span class="menu_item">Manta Menu -&gt; Preferences -&gt; Configuration Manager</span>. </p>
+  
+   <p class="centered"><img src="images/openbox_config_mgr.gif" width="400" height="347" alt="OpenBox Configuration Manager" /></p>
+
+   <p>Other appearance settings (e.g. widget style, icon theme) can be adjusted under <span class="menu_item">Manta Menu -&gt; Preferences -&gt; Appearance Settings</span>.</p>
+
+   <h2 id="subsec_configAppsUnderLXDE">Running and Configuring Applications under LXDE</h2>
+
+   <p>An important aspect of LXDE is how it provides access to the applications that come with Navigatrix (or others which you may install). The figure below shows an overview of how the different bits and pieces interact in this context.</p>
+
+   <p class="centered"><a id="figure_LXDE_config_overview"></a><img src="images/LXDE_config_overview.gif" width="756" height="454" alt="LXDE Configuration Overview" /></p>
+
+   <h3>Application Executable Files</h3>
+
+   <p>Applications under Navigatrix are executable files (think DOS/Windows *.exe) that reside in three different directories (see box &ldquo;Application Executable Files&rdquo; in the figure above):</p>
+   <ul>
+    <li><span class="path">/usr/bin/</span> hosts most of the applications that are accessible via the Manta Menu, plus many subsidiary and utility programs.    </li>
+</ul>
+<ul class="no_bullet">
+   <li><img src="images/usr_bin_contents.gif" width="600" height="456" alt="/usr/bin/ contents" /></p>
+</ul>
+<ul>
+    <li><span class="path">/opt/</span> contains a few additional programs like the zyGrib GRIB viewer and the Calibre library manager. It also contains the virtual &ldquo;C: drive&rdquo; that is used by Wine, the Windows emulator that enables you to run Windows programs under Unix (see &ldquo;<a href="#subsubsec_installingWindowsApp">Installing Windows Applications</a>&rdquo;).    </li>
+</ul>
+<ul class="no_bullet">
+   <li><img src="images/opt_contents.gif" width="600" height="402" alt="/opt/ contents" /></p>
+</ul>
+<ul>
+    <li><span class="path">usr/local/bin/</span> contains the executable file for the OpenCPN chartplotter (admittedly a bit of an odd placement, because this directory is mainly used to store wrapper shell scripts; see below).     </li>
+</ul>
+
+   <h3 id="subsubsec_appWrappers">Application Wrapper Shell Scripts</h3>
+
+   <p>When you call many of these applications via the Manta Menu, Navigatrix does a little additional housekeeping prior to actually launching the application executable file. For example, Navigatrix may update the applications configuration file with your latest GPS position (see &rdquo;<a href="#sec_GPS">GPS and Navigatrix</a>&rdquo;). This housekeeping is done by <span class="emphasis">shell scripts</span> (think Windows *.BAT files) that provide a &ldquo;wrapper" around the actual application. These shell scripts are stored under <span class="path">/usr/local/bin/</span> (see box &ldquo;Application Wrapper Shell Scripts&rdquo; in the <a href="#figure_LXDE_config_overview">figure above</a>).</p>
+   <p>To illustrate this, let&#146;s look at the Planetarium application that can be accessed via Manta<span class="menu_item"> Menu -&gt; Navigation -&gt; Planetarium</span>.</p>
+
+   <p class="centered"><img src="images/planetarium_menu.gif" width="377" height="276" alt="Planetarium in Manta Menu" /></p>
+
+   <p>The Planetarium application shows where stars and planets can be seen in the sky from a chosen location and at a chosen time. &nbsp;By default, the time is the current system time in the current time zone (these can be adjusted under <span class="menu_item">Manta Menu -&gt; Preferences -&gt; Time and Date</span>). The location can be picked from a list of locations which the application reads from a configuration file. The actual application executable is called <span class="path">stellarium</span> and resides under <span class="path">/usr/bin/</span>:</p>
+
+   <p class="centered"><img src="images/stellarium_in_bin.gif" width="600" height="402" alt="Stellarium executable in /usr/bin/" /></p>
+
+   <p></p>
+
+   <p>However, when you click on <span class="menu_item">Planetarium</span> item in the Manta Menu, you actually call a shell script called <span class="path">planetarium</span>, that resides under <span class="path">/usr/local/bin/</span>:</p>
+
+   <p class="centered"><img src="images/planetarium_shell_script_in_local_bin.gif" width="600" height="402" alt="Planetarium shell script in /usr/local/bin/" /></p>
+
+   <p></p>
+
+   <p>The contents of this shell script is relatively simple (you can look at it yourself by right-clicking on the <span class="path">planetarium</span> file and choosing <span class="menu_item">Open With... -&gt; Text Editor</span>). Note that the numbers in front are simply line numbers that are not part of the script. There is no need to understand the details of the script but it helps to illustrate the concept at a high level.</p>
+   <ol>
+    <li><span class="code">#!/bin/bash</span></li>
+    <li><span class="code">cfg=/home/$USER/.stellarium/data/user_locations.txt</span></li>
+    <li><span class="code">echo &gt;$cfg -e "Navigatrix GPS Location\t\tAutomatic\t\x00\t147127\t"$(cat /etc/nx.lat)"\t"$(cat /etc/nx.lon)"\t3\t2\t\tEarth\t"</span></li>
+    <li><span class="code">stellarium</span>    </li>
+   </ol>
+   <p>Line 1 simple defines that this file is a shell script. Lines 2 and 3 then apply some clever manipulation to insert your most recent GPS position in one of the configuration files that Stellarium reads when it starts up. Line 4 finally launches the <span class="path">stellarium</span> application executable which will now read the updated configuration file and show you the sky as it looks from your most recent GPS position. &nbsp;Navigatrix does this kind of &ldquo;position housekeeping&rdquo; for quite a few applications - a very handy feature on a computer that is used for navigation on a moving vessel.</p>
+
+   <h3>LXDE Desktop Configuration Files</h3>
+
+   <p>The link between the application wrapper shell script and the Manta Menu (or between the application executable and the Manta Menu for applications that don&#146;t have wrappers) is established via so called <span class="emphasis">desktop configuration files</span> with the extension <span class="path">.desktop</span>. These reside under <span class="path">/usr/share/applications/</span>. One such file exists per application that is to be accessed via the Manta Menu or the LX Panel&#146;s launch bar. The figure below shows the <span class="path">/usr/share/applications/</span> directory with Stellarium&#146;s desktop configuration file highlighted. Note that for these files the file manager displays not the actual filename (which in this case is <span class="path">stellarium.desktop</span>) but the application title that is defined in the file (which is &ldquo;Planetarium&rdquo;, see below).</p>
+
+   <p class="centered"><img src="images/planetarium.desktop_location.gif" width="600" height="402" alt="planetarium.desktop file /usr/share/applications/" /></p>
+
+   <p>If you open the file manager, go to <span class="path">/usr/share/applications/</span><span style="font-weight:bold" xml:lang="en-US" lang="en-US">,</span> right-click on &ldquo;Planetarium&rdquo;, and choose <span class="menu_item">Open With ... -&gt; Notepad</span>, you will see the filename <span class="path">stellarium.desktop</span> displayed in the editor's title bar:</p>
+
+   <p class="centered"><img src="images/stellarium.desktop_in_editor.gif" width="458" height="351" alt="planetarium.desktop in editor" /></p>
+
+   <p>The first three lines look the same in all the desktop configuration files in Navigatrix:</p>
+   <ol>
+    <li><span class="code">[Desktop Entry]</span> at the top of the file indicates that this is a *.desktop file. </li>
+    <li>The <span class="code">Type</span> entry simply states that this configuration file points to an application. </li>
+    <li><span class="code">Encoding</span> defines that UTF-8 character encoding is used.    </li>
+   </ol>
+   <p>The next entries are specific to Planetarium / Stellarium:</p>
+   <ol start="4">
+    <li><span class="code">Name</span> defines that this application will show up as &ldquo;Planetarium" in the Manta Menu. This is also the name under which the file manager displays the desktop configuration file.</li>
+    <li><span class="code">GenericName</span> provides a description for the menu entry.</li>
+    <li><span class="code">Exec</span> points to the program that is to be launched for this application. In this case it is the <span class="path">planetarium</span> shell script wrapper, which will update the position information as described above and then call the <span class="path">stelllarium</span> application executable file. Note that there is path in front of &ldquo;planetarium&rdquo; because the directory <span class="path">/usr/local/bin/</span> (as well as <span class="path">/usr/bin/</span>) is part of Navigatrix&#146; &ldquo;search path&rdquo;, i.e. the list of directories where it will look for executable programs if no path is provided.</li>
+    <li><span class="code">Icon</span> points to an image file to be used as the application&#146;s icon in the Manta Menu and the Launch Bar. Navigatrix stores these icon image files under <span class="path">/usr/share/pixmaps</span> (you can find the file <span class="path">stellarium.xpm</span> there). No path and no file extension is required if the icon can be found in this directory.</li>
+    <li><span class="code">StartupNotify=false</span> defines that startup notification is turned off.</li>
+    <li><span class="code">Terminal=false</span> states that the program will not run in a terminal (This is the setting for all applications that provide their own GUI).</li>
+    <li><span class="code">Categories</span> defines the category under which the application will be displayed in the Manta Menu (&ldquo;Navigation&rdquo;) in this case. Multiple categories can be specified for one application, with individual entries separated by a semicolon (e.g. &nbsp;<span class="code">Categories=Navigation;Education)</span>.</li>
+    <li><span class="code">Comment</span> defines a descriptive text that is displayed as a &ldquo;tool tip" when the mouse pointer hovers of the corresponding entry in the Manta Menu.</li>
+    <li><span class="code">Comment [fr]</span> defines the descriptive text when Navigatrix is run in French.    </li>
+   </ol>
+   <p>Once you have created a desktop configuration file for an application under <span class="path">/usr/share/applications/</span> (or <span class="path">usr/local/share/applications/</span> which is a good place to put desktop configuration files you may create yourself in order to keep them apart from the ones that come with Navigatrix), the application will show up in the Manta Menu and also be available in the configuration dialogues for the Panel&#146;s Launch Bar. Note that the list of applications on the left is different from the Navigatrix-default because the screenshot was taken with a customized version of Navigatrix:</p>
+
+   <p class="centered"><img src="images/appLaunchBar_planetarium.gif" width="450" height="301" alt="Planetarium entry in Application Launcher" /></p>
+
+   <h2 id="subsec_configAddApps">Installing Additional Software</h2>
+
+   <h3>Installing Applications From a Linux Repository</h3>
+
+    <p>Coming soon, currently under construction ...</p>
+<!--
+   <p>## Repository / Package Manager ###</p>
+   <p">## Lingot as example ###</p>
+-->
+   <h3 id="subsubsec_installingWindowsApp">Installing Windows Applications</h3>
+
+    <p>Coming soon, currently under construction ...</p>
+
+<!--
+   <p>### Wine, placement of programs, desktop config files ###</p>
+   <p>### Navimail Skyfile as example ###</p>
+-->
+<hr />
+
+<div id="prevNextContainer">
+   <li id="prev"><a href="05_gps.html">Previous<a/></li>
+   <li id="next"><a href="07_hidden_treasures.html">Next<a/></li>
+</div>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=8655246; 
+var sc_invisible=1; 
+var sc_security="6dc9f5b2"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+a177 6
+<noscript><div class="statcounter"><a title="free web stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/8655246/0/6dc9f5b2/1/"
+alt="free web stats"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+d179 10
+a188 2
+</body>
+</html>
+@
+
+
+1.11
+log
+@copy from nx homepage with Moe's additions (statcounter, spelling)
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 06_config_nx.html,v 1.10 2013/01/25 10:24:10 markus Exp markus $ -->
+d9 1
+d11 7
+a17 3
+<div id="prevNextContainer">
+   <li id="toc"><a href="index.html#toc">Table of Contents</a></li> 
+   <li id="nx"><a href="http://navigatrix.net">Navigatrix home</a></li> 
+a19 3
+</head>
+ <body>
+
+d29 1
+a29 1
+   <p class="centered"><img src="images/LX_panel_composite_cropped.png" width="732" height="413" alt="LXDE Panel Components" /></p>
+d34 1
+a34 1
+   <p class="centered"><img src="images/panel_preferences.png" width="300" height="273" alt="Panel Preferences Dialogue" /></p>
+d38 1
+a38 1
+   <p class="centered"><img src="images/openbox_config_mgr.png" width="400" height="347" alt="OpenBox Configuration Manager" /></p>
+d46 1
+a46 1
+   <p class="centered"><a id="figure_LXDE_config_overview"></a><img src="images/LXDE_config_overview.png" width="756" height="454" alt="LXDE Configuration Overview" /></p>
+d55 1
+a55 1
+   <li><img src="images/usr_bin_contents.png" width="600" height="456" alt="/usr/bin/ contents" /></p>
+d61 1
+a61 1
+   <li><img src="images/opt_contents.png" width="600" height="402" alt="/opt/ contents" /></p>
+d72 1
+a72 1
+   <p class="centered"><img src="images/planetarium_menu.png" width="377" height="276" alt="Planetarium in Manta Menu" /></p>
+d74 1
+a74 1
+   <p>The Planetarium application shows where stars and planets can be seen in the sky from a chosen location and at at a chosen time. &nbsp;By default, the time is the current system time in the current time zone (these can be adjusted under <span class="menu_item">Manta Menu -&gt; Preferences -&gt; Time and Date</span>). The location can be picked from a list of locations which the application reads from a configuration file. The actual application executable is called <span class="path">stellarium</span> and resides under <span class="path">/usr/bin/</span>:</p>
+d76 1
+a76 1
+   <p class="centered"><img src="images/stellarium_in_bin.png" width="600" height="402" alt="Stellarium executable in /usr/bin/" /></p>
+d82 1
+a82 1
+   <p class="centered"><img src="images/planetarium_shell_script_in_local_bin.png" width="600" height="402" alt="Planetarium shell script in /usr/local/bin/" /></p>
+d99 1
+a99 1
+   <p class="centered"><img src="images/planetarium.desktop_location.png" width="600" height="402" alt="planetarium.desktop file /usr/share/applications/" /></p>
+d103 1
+a103 1
+   <p class="centered"><img src="images/stellarium.desktop_in_editor.png" width="458" height="351" alt="planetarium.desktop in editor" /></p>
+d125 1
+a125 1
+   <p class="centered"><img src="images/appLaunchBar_planetarium.png" width="450" height="301" alt="Planetarium entry in Application Launcher" /></p>
+@
+
+
+1.10
+log
+@added nav bars
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 06_config_nx.html,v 1.9 2013/01/24 20:28:18 markus Exp markus $ -->
+d116 1
+a116 1
+    <li><span class="code">Terminal=false</span> states that the program will not run in a terminal (true for all applications that provide their own GUI).</li>
+d149 17
+@
+
+
+1.9
+log
+@draft sent to Moe
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 06_config_nx.html,v 1.2 2013/01/22 08:50:25 markus Exp markus $ -->
+d9 7
+a15 1
+ </head>
+d142 7
+@
+
+
+1.2
+log
+@images cleaned up, Installation subsection still missing
+@
+text
+@d1 1
+a1 1
+<!-- $Id: 06_config_nx.html,v 1.1 2013/01/21 19:42:39 markus Exp markus $ -->
+d121 4
+a124 1
+   <h3">Installing Applications From a Linux Repository</h3>
+d127 2
+d130 1
+a130 1
+   <h3 id="subsubsec_installingWindowsApp">Installing Windows Applications</h3>
+d132 1
+d135 1
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d1 1
+a1 1
+<!-- $Id$ -->
+d20 3
+a22 1
+   <p><img style="width:143.2mm; height:90.3mm" alt="" src="nx_101.html_files/13.png" /></p>
+d25 3
+a27 1
+   <p><img style="width:49.5mm; height:45.1mm" alt="" src="nx_101.html_files/15.png" /></p>
+d29 3
+a31 1
+   <p><img style="width:98.0mm; height:86.9mm" alt="" src="nx_101.html_files/17.png" /></p>
+d36 3
+a38 2
+   <p>An important aspect of LXDE is how it provides access to the applications that come with Navigatrix (or others which you may install). The figure below shows an overview of how the different bits and pieces interact in this context. ### fix &lt;user&gt;/home -&gt; /home/user ###</p>
+   <p><a name="figure_LXDE_config_overview" id="figure_LXDE_config_overview"></a><img style="width:143.2mm; height:90.5mm" alt="" src="nx_101.html_files/19.png" /></p>
+d45 5
+a49 3
+   </ul>
+   <p class="list_image"><img style="width:97.5mm; height:88.9mm" alt="" src="nx_101.html_files/21.png" /></p>
+   <ul>
+d51 5
+a55 3
+   </ul>
+   <p class="list_image"><img style="width:97.7mm; height:76.4mm" alt="" src="nx_101.html_files/23.png" /></p>
+   <ul>
+d57 2
+a58 1
+   </ul>
+d60 1
+d63 3
+a65 1
+   <p><img style="width:59.8mm; height:52.9mm" alt="" src="nx_101.html_files/25.png" /></p>
+d67 3
+a69 1
+   <p><img style="width:97.7mm; height:67.7mm" alt="" src="nx_101.html_files/27.png" /></p>
+d71 1
+d73 3
+a75 1
+   <p><img style="width:97.7mm; height:74.2mm" alt="" src="nx_101.html_files/29.png" /></p>
+d77 1
+d90 7
+a96 3
+   <p><img style="width:97.7mm; height:74.2mm" alt="" src="nx_101.html_files/31.png" /></p>
+   <p>If you open the file manager, go to <span class="path">/usr/share/applications/</span><span style="font-weight:bold" xml:lang="en-US" lang="en-US">,</span> right-click on &ldquo;Planetarium&rdquo;, and choose <span class="menu_item">Open With ... -&gt; Notepad</span>, you will see the filename <span class="path">stellarium.desktop</span> displayed in the editors title bar:</p>
+   <p><img style="width:79.2mm; height:60.7mm" alt="" src="nx_101.html_files/33.png" /></p>
+d104 1
+a104 1
+   <ol>
+d116 2
+a117 1
+   <p><img style="width:74.7mm; height:53.0mm" alt="" src="nx_101.html_files/35.png" /></p>
+@

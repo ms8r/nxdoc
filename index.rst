@@ -38,8 +38,6 @@ on the web.  There is also a `YouTube video
    docs/confignx
    docs/nxgems
    docs/support
-   docs/install_nx04
-   docs/install_nxDE
 
 **Typographic conventions used in this text**:
 

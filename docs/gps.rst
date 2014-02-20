@@ -1,7 +1,3 @@
-`Table of Contents <index.html#toc>`__
-
-`Navigatrix home <http://navigatrix.net>`__
-
 GPS and Navigatrix
 ==================
 
@@ -24,14 +20,3 @@ Try it. Open the GPS Monitor Manta Menu -> Navigation -> GPS Satellites
 and it should show something. If that fails: ask in the `Navigatrix
 Support Forum <http://navigatrix.net/support.php>`__ to find some who
 knows how to fix it.
-
---------------
-
-`Previous <04_applications.html>`__
-
-`Next <06_config_nx.html>`__
-
-|web counter|
-
-.. |web counter| image:: http://c.statcounter.com/8655226/0/479742a7/1/
-   :target: http://statcounter.com/

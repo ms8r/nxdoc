@@ -1,10 +1,17 @@
 Getting Navigatrix
 ==================
 
+This section describes how to obtain a copy of Navigatrix - either by
+downloading an ISO file or by getting a "copy from a friend", and how to set
+up and resize a persistency file area on an USB stick copy of Navigatrix.
+
+Getting an Installable Copy of Navigatrix
+-----------------------------------------
+
 There are two ways to get a bootable and installable version of
 Navigatrix.
 
-#. The easiest way to get Navigatrix is to find someone who already runs
+1. The easiest way to get Navigatrix is to find someone who already runs
    it on his or her computer. Ask around in any anchorage or marina and
    you might be in luck. All you will need is a 4GB or greater USB stick
    or SD memeory card and a computer that is able to boot from such a
@@ -124,8 +131,8 @@ drive will no longer be “parked” though. To “unmount” the drive you will
 to “eject” it by pressing the little eject symbol next to it in the File
 Manager when done.
 
-Creating or re-sizing the persistency file area
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Creating or Re-sizing the Persistency File Area
+-----------------------------------------------
 
 If you run Navigatrix from the USB stick/SD card you will likely want
 that changes you make to settings and preferences are retained from boot
@@ -137,7 +144,7 @@ this persistency file area differs between versions 0.4 and 0.5 of
 Navigatrix.
 
 Navigatrix 0.4
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 If you obtained your copy of Navigatrix as a “copy from a friend” of a
 version 0.4 USB stick the home directory on your USB stick will have a
@@ -154,7 +161,7 @@ Navigatrix Support Discussion Board for instructions on how you can
 raise the 500MB limit on your USB stick with Navigatrix 0.4.
 
 Navigatrix 0.5
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 With Navigatrix 0.5 you can create a persistency file area through a
 selection in the boot menu. When booting from the USB stick you will see

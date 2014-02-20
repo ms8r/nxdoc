@@ -1,7 +1,3 @@
-`Table of Contents <index.html#toc>`__
-
-`Navigatrix home <http://navigatrix.net>`__
-
 Configuring and Customizing Navigatrix
 ======================================
 
@@ -94,6 +90,8 @@ Executable Files” in the figure above):
 -  usr/local/bin/ contains the executable file for the OpenCPN
    chartplotter (admittedly a bit of an odd placement, because this
    directory is mainly used to store wrapper shell scripts; see below).
+
+.. _confignx-app-wrapper-scripts:
 
 Application Wrapper Shell Scripts
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -232,6 +230,8 @@ version of Navigatrix:
 
 |Planetarium entry in Application Launcher|
 
+.. _install-add-sw:
+
 Installing Additional Software
 ------------------------------
 
@@ -251,6 +251,8 @@ system like Navigatrix:
 #. Installing MS Windows applications under “Wine”, a compatibility
    layer for running Windows applications on Linux. This will also be
    covered `below <06_config_nx.html#subsubsec_installingWindowsApp>`__.
+
+.. _installsw-from-linux-repo:
 
 Installing Applications From a Linux Repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -296,7 +298,7 @@ The tool used to connect to software repositories and to download and
 install software packages is the “Synaptic Package Manager” which is
 accessible from the Manta Menu under Preferences->Package Manager
 
-|Password entry|
+|Synaptic in Manta Menu|
 
 To run the Package Manager you will need administrative (“root”) rights.
 When you launch the application you will therefore be prompted for the
@@ -410,7 +412,7 @@ installation. This is a two-step process:
 -  |Marking Lingot for installation|
 -  This will change the icon in the “Status” column which will now
    display the “Marked for installation” symbol:
--  |Marking Lingot for installation|
+-  |Marked for installation icon|
 
 2. To actually start the download and installation of Lingot now click
    on the “Apply” button in the toolbar:
@@ -525,18 +527,13 @@ use on board for musical entertainment:
    Keep this in mind before upgrading to newer versions of packages (for
    which there may be good reasons in specific cases).
 
+.. _confignx-installsw-windows:
+
 Installing Windows Applications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Coming soon, currently under construction ...
 
---------------
-
-`Previous <05_gps.html>`__
-
-`Next <07_hidden_treasures.html>`__
-
-|free web stats|
 
 .. |LXDE Panel Components| image:: images/LX_panel_composite_cropped.gif
 .. |Panel Preferences Dialogue| image:: images/panel_preferences.gif
@@ -550,7 +547,7 @@ Coming soon, currently under construction ...
 .. |planetarium.desktop file /usr/share/applications/| image:: images/planetarium.desktop_location.gif
 .. |planetarium.desktop in editor| image:: images/stellarium.desktop_in_editor.gif
 .. |Planetarium entry in Application Launcher| image:: images/appLaunchBar_planetarium.gif
-.. |Password entry| image:: images/synaptic_in_manta_menu.gif
+.. |Synaptic in Manta Menu| image:: images/synaptic_in_manta_menu.gif
 .. |Password entry| image:: images/synaptic_password.gif
 .. |Synaptic manual| image:: images/synaptic_manual.gif
 .. |Synaptic main window| image:: images/synaptic_main_window.gif
@@ -559,7 +556,7 @@ Coming soon, currently under construction ...
 .. |Lingot search result| image:: images/synaptic_lingot_search.gif
 .. |Lingot properties| image:: images/synaptic_lingot_properties.gif
 .. |Marking Lingot for installation| image:: images/synaptic_lingot_markforinstall.gif
-.. |Marking Lingot for installation| image:: images/synaptic_lingot_markforinstall_icon.gif
+.. |Marked for installation icon| image:: images/synaptic_lingot_markforinstall_icon.gif
 .. |Applying marked changes| image:: images/synaptic_lingot_applybutton.gif
 .. |Summary of changes before installation| image:: images/synaptic_lingot_summary.gif
 .. |Installation progress| image:: images/synaptic_lingot_progress.gif
@@ -567,5 +564,3 @@ Coming soon, currently under construction ...
 .. |Package list after installation| image:: images/synaptic_lingot_packlistafterinstall.gif
 .. |Lingot inn the Manta Menu| image:: images/synaptic_lingot_inmantamenu.gif
 .. |APT archive in File Manager| image:: images/synaptic_apt_archive.gif
-.. |free web stats| image:: http://c.statcounter.com/8655246/0/6dc9f5b2/1/
-   :target: http://statcounter.com/free-web-stats/

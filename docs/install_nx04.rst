@@ -5,10 +5,10 @@
 Installing Navigatrix Version 0.4
 =================================
 
-*\*\*\* NOTE: the instructions and screenshots below refer to Navigatrix
+*NOTE: the instructions and screenshots below refer to Navigatrix
 version 0.4 (ISO downloaded before July 2013). For instructions on how
 to install the current Navigatrix version 0.5 please see
-`here <03_installing_nx.html>`__. \*\*\**
+`here <03_installing_nx.html>`__.*
 
 Once you have a bootable USB stick/SD card or DVD with Navigatrix (see
 “\ `Getting Navigatrix <02_getting_nx.html>`__\ ”), installing it to
@@ -222,6 +222,8 @@ Navigatrix and Windows (plus some other stuff like “memtest” which you
 can ignore at this point). Simply press “Save” and exit the GRUB
 Customizer. The next time you boot, the GRUB selection menu should give
 you a choice between Navigatrix and Windows.
+
+.. _install04-uefi-issue:
 
 Navigatrix failing to boot on new hardware (2011+)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

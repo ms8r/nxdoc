@@ -46,7 +46,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Navigatrix'
-copyright = u'2014, crew@navigatrix.net'
+copyright = u'2014, crew [at] navigatrix.net'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -105,7 +105,11 @@ html_theme = 'default'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+html_theme_options = {
+        "sidebarbgcolor": "#000033",
+        "relbarbgcolor": "#000022",
+        "footerbgcolor": "#000033"
+        }
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []

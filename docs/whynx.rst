@@ -1,11 +1,7 @@
-`Table of Contents <index.html#toc>`__
-
-`Navigatrix home <http://navigatrix.net>`__
-
 Navigatrix - what is it and why do I need it?
 =============================================
 
-﻿Navigatrix is a complete operating system for your computer. It is put
+Navigatrix is a complete operating system for your computer. It is put
 together by people on boats for people on boats. Navigatrix includes a
 compilation of electronic tools for navigation, communication,
 information and security that you can use offshore, on shore, or at
@@ -30,9 +26,11 @@ Why do I need Navigatrix? Many reasons - here are a few:
    eye-candy, but what it does have works and, more importantly, works
    in the system with other applications and across a wide variety of
    hardware out of the box.
+
 -  It is very light-weight and will typically boot and run significantly
    faster than for example Microsoft Windows, especially on older
    laptops and/or netbooks commonly found on cruising boats.
+
 -  It has what it needs “out of the box”. There is no need to download
    patches and updates. This is a key advantage if you are sailing in
    waters with only rudimentary communications infrastructure (e. g.
@@ -40,26 +38,18 @@ Why do I need Navigatrix? Many reasons - here are a few:
    sparse to waste it on downloading the latest 20 MB of security
    updates and bug-fixes every time you finally get to a wifi
    connection.
+
 -  You can run the entire system from a USB stick. This reduces the risk
    of hard drive damage on a moving boat. It also allows you to run it
    on any computer on board or onshore (e.g. in case of equipment
    failure).
+
 -  It is truly configured for use on a boat. It has, for example, some
    smart GPS interfacing that keeps applications configuration files
    updated with your latest position and also keeps your system clock
    honest.
+
 -  It has a very helpful support discussion board and a rapidly growing
    user community.
 
 Go ahead and try it!
-
---------------
-
-`Previous <index.html>`__
-
-`Next <02_getting_nx.html>`__
-
-|web counter|
-
-.. |web counter| image:: http://c.statcounter.com/8655209/0/3a1e335a/1/
-   :target: http://statcounter.com/free-hit-counter/

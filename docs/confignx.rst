@@ -161,7 +161,7 @@ applications that don’t have wrappers) is established via so called
 desktop configuration files with the extension .desktop. These reside
 under ``/usr/share/applications/``. One such file exists per application
 that is to be accessed via the Manta Menu or the LX Panel’s launch bar.
-The figure below shows the /usr/share/applications/ directory with
+The figure below shows the ``/usr/share/applications/`` directory with
 Stellarium’s desktop configuration file highlighted. Note that for these
 files the file manager displays not the actual filename (which in this
 case is stellarium.desktop) but the application title that is defined in
@@ -196,12 +196,12 @@ The next entries are specific to Planetarium / Stellarium:
     wrapper, which will update the position information as described
     above and then call the stelllarium application executable file.
     Note that there is path in front of “planetarium” because the
-    directory /usr/local/bin/ (as well as /usr/bin/) is part of
+    directory ``/usr/local/bin/`` (as well as ``/usr/bin/``) is part of
     Navigatrix’ “search path”, i.e. the list of directories where it
     will look for executable programs if no path is provided.
 7.  ``Icon`` points to an image file to be used as the application’s icon in
     the Manta Menu and the Launch Bar. Navigatrix stores these icon
-    image files under /usr/share/pixmaps (you can find the file
+    image files under ``/usr/share/pixmaps`` (you can find the file
     stellarium.xpm there). No path and no file extension is required if
     the icon can be found in this directory.
 8.  ``StartupNotify=false`` defines that startup notification is turned off.
@@ -224,7 +224,7 @@ Once you have created a desktop configuration file for an application under
 good place to put desktop configuration files you may create yourself in order
 to keep them apart from the ones that come with Navigatrix), the application
 will show up in the Manta Menu and also be available in the configuration
-dialogues for the Panel’s Launch Bar.  Note that the list of applications on
+dialogues for the Panel’s Launch Bar. Note that the list of applications on
 the left is different from the Navigatrix-default because the screenshot was
 taken with a customized version of Navigatrix:
 

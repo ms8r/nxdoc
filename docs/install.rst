@@ -223,9 +223,9 @@ installation process.
     |Selecting a keyboard layout|
 
 5. A question about your location is next in order to set time zone and
-   number/date formats correctly (you can change these later under Manta
+   number/date formats correctly (you can change these later under *Manta
    -> Preferences -> Time and Date and Manta -> Preferences -> Language
-   Support).
+   Support*).
 
     |Picking your location|
 
@@ -321,8 +321,8 @@ This may sound complicated but is in fact pretty straight forward if you
 work carefully and make sure you have backed up the data from any
 partitions you change during this process. Navigatrix comes with a tool
 that allows you to delete, resize, move and create partitions on you
-harddisk. You can find it in the Manta Menu under Preferences->Partition
-Editor:
+harddisk. You can find it in the Manta Menu under *Preferences->Partition
+Editor*:
 
  |GParted in Manta Menu|
 
@@ -366,7 +366,7 @@ entry for Windows. Should you encounter this issue it can easily be fixed via
 the GRUB Customizer which is available (with installation instructions) `here:
 <http://navigatrix.net/viewtopic.php?p=1200#p1200>`__.  Download the package,
 install it under Navigatrix on your harddrive, and then launch it from the
-Manta Menu under Preferences->Grub Customizer.
+Manta Menu under *Preferences->Grub Customizer*.
 
  |GRUB Customizer in Manta Menu|
 

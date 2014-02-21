@@ -371,7 +371,7 @@ Manta Menu under Preferences->Grub Customizer.
  |GRUB Customizer in Manta Menu|
 
 To launch the GRUB Customizer you will have to enter the password which you
-:ref:`set up during the installation <install_password>`. Once the GRUB
+:ref:`set up during the installation <install-password>`. Once the GRUB
 Customizer is up, it will automatically scan your harddisk for bootable
 operating systems. When that is completed it should show entries for Navigatrix
 and Windows (plus some other stuff like “memtest” which you can ignore at this

@@ -1,4 +1,4 @@
-Navigatrix - what is it and why do I need it?
+Navigatrix - What Is It And Why Do i Need It?
 =============================================
 
 Navigatrix is a complete operating system for your computer. It is put

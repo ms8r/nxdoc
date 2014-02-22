@@ -93,11 +93,11 @@ Graphics
 -  **Chart Converter**: Convert images to kap charts and calibrate them. The
    menu entry invokes the shell script makekap under /usr/local/bin.
    This script first asks for an image file to be calibrated, converts
-   it to “chart.png” under /home/<user>/Desktop and then launches the
+   it to ``chart.png`` under ``/home/<user>/Desktop`` and then launches the
    Windows program SeaClear for the user to perform the geo-referencing.
    The user then saves the calibration (as
-   /home/<user>/Desktop/CHARTCAL.DIR). Upon the user exiting SeaClear
-   the script calls the tif2bsb utility to create a \*.kap chart file
+   ``/home/<user>/Desktop/CHARTCAL.DIR``). Upon the user exiting SeaClear
+   the script calls the tif2bsb utility to create a ``\*.kap`` chart file
    from the original image plus the calibration data. The chart can be
    loaded into OpenCPN. Sounds complicated but it is in fact pretty
    straight forward and the makekap script displays messages and

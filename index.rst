@@ -6,7 +6,7 @@
 A Short Introduction to Navigatrix
 ==================================
 
-This documents aims to provide a short introduction to Navigatrix, a
+This document aims to provide a short introduction to Navigatrix, a
 Unix- (or, more specifically: Linux-) based operating system and
 applications suite developed by cruisers for cruisers. This introduction
 will provide you with an overview of the different bits and pieces that
@@ -19,7 +19,7 @@ Unix-based platforms. You can use Navigatrix without any knowledge of
 Linux/Unix. If you are familiar with Microsoft Windows you should easily
 be able to draw the analogies required to understand this document,
 which does not provide any basic Unix tutorial. If you are interested in
-getting a better understanding of Unix, there a few `good introductory
+getting a better understanding of Unix, there are a few `good introductory
 tutorials
 <http://www.unix.com/answers-frequently-asked-questions/13774-unix-tutorials-programming-tutorials-shell-scripting-tutorials.html>`__
 on the web.  There is also a `YouTube video

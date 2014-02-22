@@ -17,16 +17,12 @@ SC_CODE_TEMPLATE = """
 <!-- Start of StatCounter Code for Default Guide -->
 
 <script type="text/javascript">
-  var sc_project={sc_project:s}; var sc_invisible=1; var
-  sc_security="{sc_security:s}"; var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www."); document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+  var sc_project={sc_project:s}; var sc_invisible=1; var sc_security="{sc_security:s}"; var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www."); document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
 </script>
 
 <noscript>
   <div class="statcounter">
-    <a title="web counter" href="http://statcounter.com/free-hit-counter/"
-      target="_blank"><img class="statcounter"
-      src="http://c.statcounter.com/{sc_project:s}/0/{sc_security:s}/1/" alt="web counter">
-    </a>
+    <a title="web counter" href="http://statcounter.com/free-hit-counter/" target="_blank"><img class="statcounter" src="http://c.statcounter.com/{sc_project:s}/0/{sc_security:s}/1/" alt="web counter"></a>
   </div>
 </noscript>
 
@@ -95,6 +91,7 @@ def insert_sc_script(htFile, sc_code_dict):
     tfo.close()
     if inserted:
         shutil.move(tmpFile, htFile)
+        os.chmod(htFile, 0664)
     elif os.path.exists(tmpFile):
         os.unlink(tmpFile)
 

@@ -93,7 +93,7 @@ Graphics
 -  **Chart Converter**: Convert images to kap charts and calibrate them. The
    menu entry invokes the shell script makekap under /usr/local/bin.
    This script first asks for an image file to be calibrated, converts
-   it to ``chart.png`` under ``/home/<user>/Desktop`` and then launches the
+   it to ``chart.jpg`` under ``/home/<user>/Desktop`` and then launches the
    Windows program SeaClear for the user to perform the geo-referencing.
    The user then saves the calibration (as
    ``/home/<user>/Desktop/CHARTCAL.DIR``). Upon the user exiting SeaClear
@@ -484,8 +484,8 @@ self explanatory.
 -  **Users and Groups**: Add or remove users and groups.
 
 
-.. |Manta Menu| image:: images/manta_menu_highlight.gif
-.. |Vidalia Control Panel| image:: images/vidalia_control_panel.gif
-.. |Tor Onion in Firefox| image:: images/firefox_tor_onion.gif
-.. |OpenCPN Toolbar| image:: images/ocpn_toolbar.gif
-.. |About OpenCPN| image:: images/ocpn_about.gif
+.. |Manta Menu| image:: images/manta_menu_highlight.jpg
+.. |Vidalia Control Panel| image:: images/vidalia_control_panel.jpg
+.. |Tor Onion in Firefox| image:: images/firefox_tor_onion.jpg
+.. |OpenCPN Toolbar| image:: images/ocpn_toolbar.jpg
+.. |About OpenCPN| image:: images/ocpn_about.jpg

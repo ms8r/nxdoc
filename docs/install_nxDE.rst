@@ -386,36 +386,36 @@ hier am Beispiel der Tabellenkalkulation Gnumeric gezeigt.
 
 |web analytics|
 
-.. |Harddisk install option on desktop| image:: images/hdd_install_on_desktop.gif
-.. |Sprache für Installation einstellen| image:: images/install_01_willkommen.gif
-.. |Installationsvoraussetzungen| image:: images/install_02_vorbereitung.gif
-.. |Funknetzwerk| image:: images/install_03_funknetzwerk.gif
-.. |Installationsart| image:: images/install_04a_installationsart.gif
-.. |Navigatrix neben einem bestehenden OS isntallieren| image:: images/install_04a1_nx_daneben.gif
-.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b_installationsart.gif
-.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b1_installationsart.gif
-.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b2_installationsart.gif
-.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b3_installationsart.gif
-.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b8_installationsart.gif
-.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b9_installationsart.gif
-.. |Standortauswhl| image:: images/install_05_wo_befinden.gif
-.. |Tastaturbelegung| image:: images/install_06_tastaturbelegung.gif
-.. |Wer bist du denn?| image:: images/install_07_wer_bist_du_denn.gif
-.. |Dateien kopieren| image:: images/install_08_dateien_kopieren.gif
-.. |Ich habe fertig| image:: images/install_09_habe_fertig.gif
-.. |Language Support im Manta Menü| image:: images/01_language_support_in_manta_menu.gif
-.. |Checking available language support| image:: images/02_checking_available_support.gif
-.. |Support not complete| image:: images/03_not_installed_completly.gif
-.. |Language Support| image:: images/04_language_support.gif
-.. |Language Support - Installed Languages| image:: images/06_installed_languages_with_selection.gif
-.. |Authentication| image:: images/07_authenticate.gif
-.. |Applying changes| image:: images/08_applying_changes.gif
-.. |Language Support mit Deutsch| image:: images/09_language_support_with_german.gif
-.. |Deutsch nach oben verschieben| image:: images/10_moving_german.gif
-.. |Deutsch ganz oben| image:: images/11_german_on_top.gif
-.. |Ordner umbenennen| image:: images/12_ordner_automatisch_umbenennen.gif
-.. |Ordner umbenennen| image:: images/13_deutsche_ordner.gif
-.. |Deutsches Manta Menu| image:: images/14_manta_zubehoer_mixed.gif
-.. |Gnumeric in Deutsch| image:: images/16_gnumeric_de.gif
+.. |Harddisk install option on desktop| image:: images/hdd_install_on_desktop.jpg
+.. |Sprache für Installation einstellen| image:: images/install_01_willkommen.jpg
+.. |Installationsvoraussetzungen| image:: images/install_02_vorbereitung.jpg
+.. |Funknetzwerk| image:: images/install_03_funknetzwerk.jpg
+.. |Installationsart| image:: images/install_04a_installationsart.jpg
+.. |Navigatrix neben einem bestehenden OS isntallieren| image:: images/install_04a1_nx_daneben.jpg
+.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b_installationsart.jpg
+.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b1_installationsart.jpg
+.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b2_installationsart.jpg
+.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b3_installationsart.jpg
+.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b8_installationsart.jpg
+.. |Navigatrix in einer oder mehreren speziellen Partition(en) installieren| image:: images/install_04b9_installationsart.jpg
+.. |Standortauswhl| image:: images/install_05_wo_befinden.jpg
+.. |Tastaturbelegung| image:: images/install_06_tastaturbelegung.jpg
+.. |Wer bist du denn?| image:: images/install_07_wer_bist_du_denn.jpg
+.. |Dateien kopieren| image:: images/install_08_dateien_kopieren.jpg
+.. |Ich habe fertig| image:: images/install_09_habe_fertig.jpg
+.. |Language Support im Manta Menü| image:: images/01_language_support_in_manta_menu.jpg
+.. |Checking available language support| image:: images/02_checking_available_support.jpg
+.. |Support not complete| image:: images/03_not_installed_completly.jpg
+.. |Language Support| image:: images/04_language_support.jpg
+.. |Language Support - Installed Languages| image:: images/06_installed_languages_with_selection.jpg
+.. |Authentication| image:: images/07_authenticate.jpg
+.. |Applying changes| image:: images/08_applying_changes.jpg
+.. |Language Support mit Deutsch| image:: images/09_language_support_with_german.jpg
+.. |Deutsch nach oben verschieben| image:: images/10_moving_german.jpg
+.. |Deutsch ganz oben| image:: images/11_german_on_top.jpg
+.. |Ordner umbenennen| image:: images/12_ordner_automatisch_umbenennen.jpg
+.. |Ordner umbenennen| image:: images/13_deutsche_ordner.jpg
+.. |Deutsches Manta Menu| image:: images/14_manta_zubehoer_mixed.jpg
+.. |Gnumeric in Deutsch| image:: images/16_gnumeric_de.jpg
 .. |web analytics| image:: http://c.statcounter.com/8655217/0/04865527/1/
    :target: http://statcounter.com/

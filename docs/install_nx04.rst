@@ -309,20 +309,20 @@ either...
 
 |web analytics|
 
-.. |Navigatrix Desktop| image:: images/nx_desktop.gif
-.. |Harddisk install option on desktop| image:: images/hdd_install_on_desktop.gif
-.. |Installation step 1/7| image:: images/install_01.gif
-.. |Installation step 2/7| image:: images/install_02.gif
-.. |Installation step 3/7| image:: images/install_03.gif
-.. |Installation step 4/7| image:: images/install_04.gif
-.. |Installation step 5/7 - advanced partitioning| image:: images/install_04_advanced.gif
-.. |Installation step 4/7 - confirmation| image:: images/install_04a.gif
-.. |Installation step 5/7| image:: images/install_05.gif
-.. |Installation step 6/7| image:: images/install_06.gif
-.. |Installation step 7/7| image:: images/install_07.gif
-.. |Step 4/7 with four existing primary partitions| image:: images/4primaryParts.gif
-.. |Step 5/8 with four existing primary partitions| image:: images/4primaryParts_detail.gif
-.. |GParted in Manta Menu| image:: images/gparted_in_manta_menu.gif
-.. |GRUB Customizer in Manta Menu| image:: images/grub_customizer_in_manta_menu.gif
+.. |Navigatrix Desktop| image:: images/nx_desktop.jpg
+.. |Harddisk install option on desktop| image:: images/hdd_install_on_desktop.jpg
+.. |Installation step 1/7| image:: images/install_01.jpg
+.. |Installation step 2/7| image:: images/install_02.jpg
+.. |Installation step 3/7| image:: images/install_03.jpg
+.. |Installation step 4/7| image:: images/install_04.jpg
+.. |Installation step 5/7 - advanced partitioning| image:: images/install_04_advanced.jpg
+.. |Installation step 4/7 - confirmation| image:: images/install_04a.jpg
+.. |Installation step 5/7| image:: images/install_05.jpg
+.. |Installation step 6/7| image:: images/install_06.jpg
+.. |Installation step 7/7| image:: images/install_07.jpg
+.. |Step 4/7 with four existing primary partitions| image:: images/4primaryParts.jpg
+.. |Step 5/8 with four existing primary partitions| image:: images/4primaryParts_detail.jpg
+.. |GParted in Manta Menu| image:: images/gparted_in_manta_menu.jpg
+.. |GRUB Customizer in Manta Menu| image:: images/grub_customizer_in_manta_menu.jpg
 .. |web analytics| image:: http://c.statcounter.com/8655217/0/04865527/1/
    :target: http://statcounter.com/

@@ -220,10 +220,10 @@ The image shows the ~/Library subdirectory but the 2.6GB represents
 avaiable space that is shared between all the subdirectories listed
 above.
 
-.. |Make a copy for a friend| image:: images/nx_cp_for_friend.gif
-.. |Navigatrix download page| image:: images/nx_download_page.gif
+.. |Make a copy for a friend| image:: images/nx_cp_for_friend.jpg
+.. |Navigatrix download page| image:: images/nx_download_page.jpg
 .. |Navigatrix boot screen 1/3| image:: images/boot_screen_1.jpg
 .. |Navigatrix boot screen 2/3| image:: images/boot_screen_2.jpg
 .. |Navigatrix boot screen 3/3| image:: images/boot_screen_3.jpg
-.. |Persistency area in file manager| image:: images/usb_after_set-up_01.gif
-.. |FAT area in file manager| image:: images/usb_after_set-up_02.gif
+.. |Persistency area in file manager| image:: images/usb_after_set-up_01.jpg
+.. |FAT area in file manager| image:: images/usb_after_set-up_02.jpg

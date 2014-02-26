@@ -67,7 +67,7 @@ and pieces interact in this context.
 
 .. _confignx-figure-lxde-config-overview:
 
-.. figure:: images/LXDE_config_overview.gif
+.. figure:: images/LXDE_config_overview.jpg
 
    LXDE Configuration Overview
 
@@ -568,32 +568,32 @@ Coming soon, currently under construction ...
 
 
 
-.. |LXDE Panel Components| image:: images/LX_panel_composite_cropped.gif
-.. |Panel Preferences Dialogue| image:: images/panel_preferences.gif
-.. |OpenBox Configuration Manager| image:: images/openbox_config_mgr.gif
-.. |LXDE Configuration Overview| image:: images/LXDE_config_overview.gif
-.. |/usr/bin/ contents| image:: images/usr_bin_contents.gif
-.. |/opt/ contents| image:: images/opt_contents.gif
-.. |Planetarium in Manta Menu| image:: images/planetarium_menu.gif
-.. |Stellarium executable in /usr/bin/| image:: images/stellarium_in_bin.gif
-.. |Planetarium shell script in /usr/local/bin/| image:: images/planetarium_shell_script_in_local_bin.gif
-.. |planetarium.desktop file /usr/share/applications/| image:: images/planetarium.desktop_location.gif
-.. |planetarium.desktop in editor| image:: images/stellarium.desktop_in_editor.gif
-.. |Planetarium entry in Application Launcher| image:: images/appLaunchBar_planetarium.gif
-.. |Synaptic in Manta Menu| image:: images/synaptic_in_manta_menu.gif
-.. |Password entry| image:: images/synaptic_password.gif
-.. |Synaptic manual| image:: images/synaptic_manual.gif
-.. |Synaptic main window| image:: images/synaptic_main_window.gif
-.. |Synaptic search| image:: images/synaptic_search.gif
-.. |Synaptic reload| image:: images/synaptic_reload.gif
-.. |Lingot search result| image:: images/synaptic_lingot_search.gif
-.. |Lingot properties| image:: images/synaptic_lingot_properties.gif
-.. |Marking Lingot for installation| image:: images/synaptic_lingot_markforinstall.gif
-.. |Marked for installation icon| image:: images/synaptic_lingot_markforinstall_icon.gif
-.. |Applying marked changes| image:: images/synaptic_lingot_applybutton.gif
-.. |Summary of changes before installation| image:: images/synaptic_lingot_summary.gif
-.. |Installation progress| image:: images/synaptic_lingot_progress.gif
-.. |Installation complete| image:: images/synaptic_lingot_changesapplied.gif
-.. |Package list after installation| image:: images/synaptic_lingot_packlistafterinstall.gif
-.. |Lingot inn the Manta Menu| image:: images/synaptic_lingot_inmantamenu.gif
-.. |APT archive in File Manager| image:: images/synaptic_apt_archive.gif
+.. |LXDE Panel Components| image:: images/LX_panel_composite_cropped.jpg
+.. |Panel Preferences Dialogue| image:: images/panel_preferences.jpg
+.. |OpenBox Configuration Manager| image:: images/openbox_config_mgr.jpg
+.. |LXDE Configuration Overview| image:: images/LXDE_config_overview.jpg
+.. |/usr/bin/ contents| image:: images/usr_bin_contents.jpg
+.. |/opt/ contents| image:: images/opt_contents.jpg
+.. |Planetarium in Manta Menu| image:: images/planetarium_menu.jpg
+.. |Stellarium executable in /usr/bin/| image:: images/stellarium_in_bin.jpg
+.. |Planetarium shell script in /usr/local/bin/| image:: images/planetarium_shell_script_in_local_bin.jpg
+.. |planetarium.desktop file /usr/share/applications/| image:: images/planetarium.desktop_location.jpg
+.. |planetarium.desktop in editor| image:: images/stellarium.desktop_in_editor.jpg
+.. |Planetarium entry in Application Launcher| image:: images/appLaunchBar_planetarium.jpg
+.. |Synaptic in Manta Menu| image:: images/synaptic_in_manta_menu.jpg
+.. |Password entry| image:: images/synaptic_password.jpg
+.. |Synaptic manual| image:: images/synaptic_manual.jpg
+.. |Synaptic main window| image:: images/synaptic_main_window.jpg
+.. |Synaptic search| image:: images/synaptic_search.jpg
+.. |Synaptic reload| image:: images/synaptic_reload.jpg
+.. |Lingot search result| image:: images/synaptic_lingot_search.jpg
+.. |Lingot properties| image:: images/synaptic_lingot_properties.jpg
+.. |Marking Lingot for installation| image:: images/synaptic_lingot_markforinstall.jpg
+.. |Marked for installation icon| image:: images/synaptic_lingot_markforinstall_icon.jpg
+.. |Applying marked changes| image:: images/synaptic_lingot_applybutton.jpg
+.. |Summary of changes before installation| image:: images/synaptic_lingot_summary.jpg
+.. |Installation progress| image:: images/synaptic_lingot_progress.jpg
+.. |Installation complete| image:: images/synaptic_lingot_changesapplied.jpg
+.. |Package list after installation| image:: images/synaptic_lingot_packlistafterinstall.jpg
+.. |Lingot inn the Manta Menu| image:: images/synaptic_lingot_inmantamenu.jpg
+.. |APT archive in File Manager| image:: images/synaptic_apt_archive.jpg

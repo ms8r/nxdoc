@@ -380,22 +380,22 @@ boot, the GRUB selection menu should give you a choice between Navigatrix and
 Windows.
 
 
-.. |Navigatrix Desktop| image:: images/nx_desktop.gif
-.. |Harddisk install option on desktop| image:: images/hdd_install_on_desktop.gif
-.. |Language for installation procedure| image:: images/install_05_01.gif
-.. |Installation prerequisites| image:: images/install_05_02.gif
-.. |Wirless connection for installation| image:: images/install_05_03.gif
-.. |Installation type| image:: images/install_05_04.gif
-.. |Adjusting partition size| image:: images/install_05_05.gif
-.. |Installing as something else| image:: images/install_05_06.gif
-.. |Installation type details 1/3| image:: images/install_05_07.gif
-.. |Installation type details 2/3| image:: images/install_05_08.gif
-.. |Installation type details 3/3| image:: images/install_05_09.gif
-.. |Selecting a keyboard layout| image:: images/install_05_10.gif
-.. |Picking your location| image:: images/install_05_11.gif
-.. |Picking user name and password| image:: images/install_05_12.gif
-.. |Installation complete| image:: images/install_05_13.gif
-.. |Step 4/7 with four existing primary partitions| image:: images/4primaryParts.gif
-.. |Step 5/8 with four existing primary partitions| image:: images/4primaryParts_detail.gif
-.. |GParted in Manta Menu| image:: images/gparted_in_manta_menu.gif
-.. |GRUB Customizer in Manta Menu| image:: images/grub_customizer_in_manta_menu.gif
+.. |Navigatrix Desktop| image:: images/nx_desktop.jpg
+.. |Harddisk install option on desktop| image:: images/hdd_install_on_desktop.jpg
+.. |Language for installation procedure| image:: images/install_05_01.jpg
+.. |Installation prerequisites| image:: images/install_05_02.jpg
+.. |Wirless connection for installation| image:: images/install_05_03.jpg
+.. |Installation type| image:: images/install_05_04.jpg
+.. |Adjusting partition size| image:: images/install_05_05.jpg
+.. |Installing as something else| image:: images/install_05_06.jpg
+.. |Installation type details 1/3| image:: images/install_05_07.jpg
+.. |Installation type details 2/3| image:: images/install_05_08.jpg
+.. |Installation type details 3/3| image:: images/install_05_09.jpg
+.. |Selecting a keyboard layout| image:: images/install_05_10.jpg
+.. |Picking your location| image:: images/install_05_11.jpg
+.. |Picking user name and password| image:: images/install_05_12.jpg
+.. |Installation complete| image:: images/install_05_13.jpg
+.. |Step 4/7 with four existing primary partitions| image:: images/4primaryParts.jpg
+.. |Step 5/8 with four existing primary partitions| image:: images/4primaryParts_detail.jpg
+.. |GParted in Manta Menu| image:: images/gparted_in_manta_menu.jpg
+.. |GRUB Customizer in Manta Menu| image:: images/grub_customizer_in_manta_menu.jpg

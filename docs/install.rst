@@ -265,7 +265,7 @@ Enjoy!
 
 
 Changing the Default Language for Navigatrix
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------
 
 After you have installed Navigatrix on your hard disk you can change the
 default language for the user interface by following the instructions in
@@ -363,7 +363,7 @@ launches the operating system of your choice.
 There have been cases where - once you reboot your computer after installing
 Navigatrix - GRUB only shows a single entry for Navigatrix as a boot option and
 entry for Windows. Should you encounter this issue it can easily be fixed via
-the GRUB Customizer which is available (with installation instructions) `here:
+the GRUB Customizer which is available (with installation instructions) `here
 <http://navigatrix.net/viewtopic.php?p=1200#p1200>`__.  Download the package,
 install it under Navigatrix on your harddrive, and then launch it from the
 Manta Menu under *Preferences->Grub Customizer*.

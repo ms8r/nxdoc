@@ -43,6 +43,3 @@ Additional static layout elements.
 ### files/
 
 GIMP source files for some of the images used.
-
-_templates
-

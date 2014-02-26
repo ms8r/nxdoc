@@ -19,4 +19,5 @@ whereabouts.
 Try it. Open the GPS Monitor Manta Menu -> Navigation -> GPS Satellites
 and it should show something. If that fails: ask in the `Navigatrix
 Support Forum <http://navigatrix.net/support.php>`__ to find some who
-knows how to fix it.
+knows how to fix it. A good thread to start with in the Support Forum is `this
+one <http://navigatrix.net/viewtopic.php?f=4&t=366>`__.

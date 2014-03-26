@@ -224,8 +224,8 @@ There is also a `good post on the Navigatrix Support Forum
 <http://navigatrix.net/viewtopic.php?f=4&t=529&p=2597&hilit=other+options#p2597>`__
 describing the initial boot stick creation on a Windows computer.
 
-.. |Make a copy for a friend| image:: images/nx_cp_for_friend.gif
-.. |Navigatrix download page| image:: images/nx_download_page.gif
+.. |Make a copy for a friend| image:: images/nx_cp_for_friend.jpg
+.. |Navigatrix download page| image:: images/nx_download_page.jpg
 .. |Navigatrix boot screen 1/3| image:: images/boot_screen_1.jpg
 .. |Navigatrix boot screen 2/3| image:: images/boot_screen_2.jpg
 .. |Navigatrix boot screen 3/3| image:: images/boot_screen_3.jpg

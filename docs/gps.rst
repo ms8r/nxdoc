@@ -9,7 +9,7 @@ anything is plugged in to one of these ports it runs over there and asks
 your gps to prove it; provide gps data. The daemon and your GPS then get
 acquainted; speed; protocol...stuff  like that.
 
-| The gpsd works with many many many GPS units. Chances are very good
+The gpsd works with many many many GPS units. Chances are very good
 that your gps will function without any other intervention. Once your
 gps is connected the gpsd will provide gps data to any other software on
 the system that can listen. The gpsd will also help keep your clock on

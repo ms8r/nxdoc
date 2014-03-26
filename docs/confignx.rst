@@ -577,8 +577,8 @@ Coming soon, currently under construction ...
 .. |Planetarium in Manta Menu| image:: images/planetarium_menu.jpg
 .. |Stellarium executable in /usr/bin/| image:: images/stellarium_in_bin.jpg
 .. |Planetarium shell script in /usr/local/bin/| image:: images/planetarium_shell_script_in_local_bin.jpg
-.. |planetarium.desktop file /usr/share/applications/| image:: images/planetarium.desktop_location.jpg
-.. |planetarium.desktop in editor| image:: images/stellarium.desktop_in_editor.jpg
+.. |planetarium.desktop file /usr/share/applications/| image:: images/planetarium_desktop_location.jpg
+.. |planetarium.desktop in editor| image:: images/stellarium_desktop_file.jpg
 .. |Planetarium entry in Application Launcher| image:: images/appLaunchBar_planetarium.jpg
 .. |Synaptic in Manta Menu| image:: images/synaptic_in_manta_menu.jpg
 .. |Password entry| image:: images/synaptic_password.jpg

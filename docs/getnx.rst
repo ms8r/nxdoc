@@ -67,6 +67,10 @@ Navigatrix.
       support added and includes some minor fixes over the August 2013
       version. It will also run on *non-PAE* hardware.
 
+   -  **Navigatrix 0.5 from May 2014**: The latest version; based on ubuntu 14.04 LTS (*"Trusty Tahr"*).
+
+
+
    The exact version you are running will be displayed during start-up and
    shut-down above the Navigatrix logo in the center of the screen
    (top-right corner of the logo, where the moon is displayed after
